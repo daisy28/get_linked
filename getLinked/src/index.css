@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: local("ClashDisplay"),
+  url("./fonts/Fonts/OTF/ClashDisplay-Regular.otf");
+}
+
+.font-face-cd {
+  font-family: "ClashDisplay";
 }
