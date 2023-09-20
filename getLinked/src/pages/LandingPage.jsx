@@ -1,9 +1,12 @@
-import React from "react";
+// import React from "react";
+import LandingPageNav from "../components/LandingPageNav";
+import Hero from "../components/Hero";
 
 const LandingPage = () => {
      return (
-          <section className={`font-face-cd bg-[#140D27] text-[#D434FE]`}>
-               LandingPage
+          <section className={``}>
+               <LandingPageNav />
+               <Hero />
           </section>
      )
 }

@@ -1,5 +1,5 @@
-import React from 'react'
-import { createHashRouter, RouterProvider, Outlet } from "react-router-dom"
+// import React from 'react'
+import { createHashRouter, RouterProvider } from "react-router-dom"
 import LandingPage from './pages/LandingPage';
 import Contact from './pages/Contact';
 import Register from './pages/Register';
