@@ -40,7 +40,7 @@ const Intro = () => {
             have the chance to transform your ideas into reality. Solving
             real-world problems, pushing the boundaries of technology, and
             creating solution that can change the world, that&apos;s what
-            we&apos;re all about
+            we&apos;re all about!
           </p>
         </div>
       </div>
