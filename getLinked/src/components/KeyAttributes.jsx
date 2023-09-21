@@ -6,6 +6,7 @@ import Star2 from "../assets/star (1).svg";
 import Star3 from "../assets/star.svg";
 import Flare2 from "../assets/Purple-Lens-Flare-PNG.svg";
 import Ellipse from "../assets/Ellipse 2.svg";
+import style from "./style.module.css";
 
 const KeyAttributes = () => {
   const data = [
@@ -90,7 +91,7 @@ const KeyAttributes = () => {
               );
             })}
             <button
-              className={`w-[150px] h-[53px] rounded-[4px] bg-gradient-to-r from-[#D434FE] to-[#903AFF] text-[#fff] font-[400] text-[16px] my-4`}
+              className={`${style._btn_style} w-[150px] h-[53px] rounded-[4px] text-[#fff] font-[400] text-[16px] my-4`}
             >
               <Link to="/">Read More</Link>
             </button>

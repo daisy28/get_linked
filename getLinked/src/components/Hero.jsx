@@ -75,7 +75,7 @@ const Hero = () => {
           </div>
           <div className={`flex justify-center mt-4`}>
             <button
-              className={`w-[172px] h-[53px] rounded-[4px] bg-gradient-to-r from-[#D434FE] to-[#903AFF] text-[#fff] font-[400] text-[16px] my-4 mx-auto md:mx-0 md:mr-auto`}
+              className={`${style._btn_style} w-[172px] h-[53px] rounded-[4px]  text-[#fff] font-[400] text-[16px] my-4 mx-auto md:mx-0 md:mr-auto`}
             >
               <Link to="/register">Register</Link>
             </button>

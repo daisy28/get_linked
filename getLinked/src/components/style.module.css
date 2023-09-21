@@ -6,6 +6,10 @@
      /* font: unicaone */
 }
 
+._btn_style {
+     background-image: linear-gradient(to right, #FF26B9, #D434FE, #903AFF);
+}
+
 ._header_div,
 ._hero_div {
      width: 272px;

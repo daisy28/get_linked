@@ -5,6 +5,7 @@ import Intro from "../components/Intro";
 import Rules from "../components/Rules";
 import KeyAttributes from "../components/KeyAttributes";
 import Faqs from "../components/Faqs";
+import Timeline from "../components/Timeline";
 
 const LandingPage = () => {
      return (
@@ -15,6 +16,7 @@ const LandingPage = () => {
                <Rules />
                <KeyAttributes />
                <Faqs />
+               <Timeline />
           </section>
      )
 }
