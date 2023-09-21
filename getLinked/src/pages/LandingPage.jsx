@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Intro from "../components/Intro";
 import Rules from "../components/Rules";
 import KeyAttributes from "../components/KeyAttributes";
+import Faqs from "../components/Faqs";
 
 const LandingPage = () => {
      return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
                <Intro />
                <Rules />
                <KeyAttributes />
+               <Faqs />
           </section>
      )
 }
