@@ -6,19 +6,21 @@ import Rules from "../components/Rules";
 import KeyAttributes from "../components/KeyAttributes";
 import Faqs from "../components/Faqs";
 import Timeline from "../components/Timeline";
+import Prizes from "../components/Prizes";
 
 const LandingPage = () => {
-     return (
-          <section className={``}>
-               <LandingPageNav />
-               <Hero />
-               <Intro />
-               <Rules />
-               <KeyAttributes />
-               <Faqs />
-               <Timeline />
-          </section>
-     )
-}
+  return (
+    <section className={``}>
+      <LandingPageNav />
+      <Hero />
+      <Intro />
+      <Rules />
+      <KeyAttributes />
+      <Faqs />
+      <Timeline />
+      <Prizes />
+    </section>
+  );
+};
 
 export default LandingPage;

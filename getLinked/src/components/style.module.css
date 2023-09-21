@@ -29,6 +29,10 @@
      font-size: 28.7px;
 }
 
+._rewards_div {
+     padding: .75rem;
+}
+
 
 
 @media screen and (max-width: 300px){
@@ -43,6 +47,10 @@
 
      ._hackathon {
      font-size: 22.8px;
+}
+
+._rewards_div {
+     padding: .35rem;
 }
 }
 
