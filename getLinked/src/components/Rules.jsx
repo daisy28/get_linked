@@ -7,7 +7,7 @@ import Img1 from "../assets/7450159 1.svg";
 const Rules = () => {
   return (
     <section
-      className={`p-6 bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}
+      className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}
     >
       <div className={`md:flex justify-center gap-6 items-center xl:gap-0`}>
         <div className={`relative md:w-[50%] md:order-4`}>
@@ -20,7 +20,7 @@ const Rules = () => {
           <img
             src={Flare2}
             alt="star"
-            className={`absolute right-[-23px] top-[-150px] w-[50%] md:top-[20px] md:right-[-22px] lg:right-[-45px] hidden md:block`}
+            className={`absolute right-[-23px] top-[-150px] w-[50%] md:top-[120px] md:right-[-22px] lg:right-[-45px] hidden md:block`}
           />
           <img
             src={Star2}
@@ -50,7 +50,7 @@ const Rules = () => {
             className={`absolute right-[70px] top-[60px] w-full md:top-[-100px] md:right-[20px] hidden md:block`}
           />
           <h1
-            className={`text-[24px] font-[600] lading-[32px] text-[#fff] mb-4`}
+            className={`text-[24px] font-[600] leading-[32px] text-[#fff] mb-4`}
           >
             Rules and <span className={`text-[#D434FE]`}>Guidlines</span>
           </h1>
