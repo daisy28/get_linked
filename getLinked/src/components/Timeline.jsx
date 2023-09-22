@@ -6,7 +6,7 @@ import Star3 from "../assets/star.svg";
 const Timeline = () => {
   return (
     <section
-      className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`} id="Timeline"
+      className={`p-6 py-[4rem] bg-[#140D27] border-0 lg:px-[3rem]`} id="Timeline"
     >
       <div className={``}>
         <div className={`text-center mb-10`}>
@@ -59,7 +59,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full`}
               >
-                <p className={`text-center text-[10px]`}>1</p>
+                <p className={`text-center text-[10px] font-[600]`}>1</p>
               </div>
               <p
                 className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
@@ -87,7 +87,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full`}
               >
-                <p className={`text-center text-[10px]`}>2</p>
+                <p className={`text-center text-[10px] font-[600]`}>2</p>
               </div>
               <p
                 className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
@@ -114,7 +114,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full`}
               >
-                <p className={`text-center text-[10px]`}>3</p>
+                <p className={`text-center text-[10px] font-[600]`}>3</p>
               </div>
               <p
                 className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
@@ -143,7 +143,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full`}
               >
-                <p className={`text-center text-[10px]`}>4</p>
+                <p className={`text-center text-[10px] font-[600]`}>4</p>
               </div>
               <p
                 className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
@@ -171,7 +171,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full`}
               >
-                <p className={`text-center text-[10px]`}>5</p>
+                <p className={`text-center text-[10px] font-[600]`}>5</p>
               </div>
               <p
                 className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
@@ -199,7 +199,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full`}
               >
-                <p className={`text-center text-[10px]`}>6</p>
+                <p className={`text-center text-[10px] font-[600]`}>6</p>
               </div>
               <p
                 className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
@@ -246,7 +246,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full relative left-[-8px]`}
               >
-                <p className={`text-center text-[10px]`}>1</p>
+                <p className={`text-center text-[10px] font-[600]`}>1</p>
               </div>
             </div>
 
@@ -273,7 +273,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full relative left-[-8px]`}
               >
-                <p className={`text-center text-[10px]`}>2</p>
+                <p className={`text-center text-[10px] font-[600]`}>2</p>
               </div>
             </div>
 
@@ -309,7 +309,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full relative left-[-8px]`}
               >
-                <p className={`text-center text-[10px]`}>3</p>
+                <p className={`text-center text-[10px] font-[600]`}>3</p>
               </div>
             </div>
 
@@ -336,7 +336,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full relative left-[-8px]`}
               >
-                <p className={`text-center text-[10px]`}>4</p>
+                <p className={`text-center text-[10px] font-[600]`}>4</p>
               </div>
             </div>
 
@@ -374,7 +374,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full relative left-[-8px]`}
               >
-                <p className={`text-center text-[10px]`}>5</p>
+                <p className={`text-center text-[10px] font-[600]`}>5</p>
               </div>
             </div>
 
@@ -401,7 +401,7 @@ const Timeline = () => {
               <div
                 className={`${style._btn_style} w-[20px] h-[20px] p-2 flex justify-center items-center text-[#fff] rounded-full relative left-[-8px]`}
               >
-                <p className={`text-center text-[10px]`}>6</p>
+                <p className={`text-center text-[10px] font-[600]`}>6</p>
               </div>
             </div>
 

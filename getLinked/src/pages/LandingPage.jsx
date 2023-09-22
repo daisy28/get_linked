@@ -9,6 +9,7 @@ import Timeline from "../components/Timeline";
 import Prizes from "../components/Prizes";
 import Partners from "../components/Partners";
 import PrivacyPolicy from "../components/PrivacyPolicy";
+import Footer from "../components/Footer";
 
 const LandingPage = () => {
   return (
@@ -23,6 +24,7 @@ const LandingPage = () => {
       <Prizes />
       <Partners />
       <PrivacyPolicy />
+      <Footer />
     </section>
   );
 };

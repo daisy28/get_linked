@@ -1,11 +1,13 @@
-import React from "react";
+import LandingPageNav from "../components/LandingPageNav";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
-     return (
-          <section>
-               Contact
-          </section>
-     )
-}
+  return (
+    <section>
+      <LandingPageNav />
+      <ContactForm />
+    </section>
+  );
+};
 
 export default Contact;

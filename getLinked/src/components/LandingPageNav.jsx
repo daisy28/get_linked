@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Toggle from "../assets/Vector (1).svg";
 import { MdClose } from "react-icons/md";
 import style from "./style.module.css";
+import Circle from "../assets/Group 1.svg";
+
 
 const LandingPageNav = () => {
   const [toggle, setToggle] = useState(false);
@@ -35,13 +37,12 @@ const LandingPageNav = () => {
           <div
               className={`bg-[#140D27] w-[270px] z-[90] absolute right-[-20px] top-[-38px] ml-auto p-6 px-8 flex flex-col rounded-[8px] shadow-lg gap-8`}
             >
-              <div className={``}>
-              <div className={`w-[20px] h-[20px] flex justify-center items-center border border-[#d434FE] rounded-full ml-auto mb-6`}>
+              <div className={`relative`}>
+                <img src={Circle} alt="" className={`relative ml-auto`} />
                 <MdClose
-                  className={`cursor-pointer text-[#fff]`}
+                  className={`absolute top-[3px] right-[3px] cursor-pointer text-[#fff]`}
                   onClick={() => setToggle((prevToggle) => !prevToggle)}
                 />
-                </div>
                 
               </div>
               <div

@@ -12,7 +12,7 @@ import Star2 from "../assets/star (1).svg";
 
 const Hero = () => {
   return (
-    <section className={`bg-[#150E28] pt-8 lg:px-[3rem] px-6 border-b border-[rgba(129,128,128,0.24)]`}>
+    <section className={`bg-[#150E28] pt-8 lg:px-[3rem] px-6 border-b border-[rgba(129,128,128,0.24)]`} id="Hero">
       <div className={`${style._header_div} relative mb-6 mx-auto flex flex-col md:ml-auto md:mx-0`}>
         <h1
           className={`${style._hero_text} italic leading-[32px] text-[#fff] font-[600] text-center md:text-[16px]`}

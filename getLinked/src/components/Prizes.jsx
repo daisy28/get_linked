@@ -12,7 +12,7 @@ import BronzeMedal from "../assets/bronze_medal 1.svg";
 const Prizes = () => {
   return (
     <section
-      className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}
+      className={`p-6 py-[4rem] bg-[#100B20] border-0 lg:px-[3rem] pb-[8rem]`}
     >
       <div className={`flex flex-col gap-6`}>
         <div
@@ -23,7 +23,7 @@ const Prizes = () => {
           >
             Prizes and<span className={`text-[#D434FE]`}> Rewards</span>
           </h1>
-          <p className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}>
+          <p className={`text-[13px] font-[400] text-[#fff] leading-[30px] mb-10`}>
             {" "}
             Highlight of the prizes or rewards for winners and for participants.
           </p>
@@ -32,7 +32,7 @@ const Prizes = () => {
           <img
             src={Flare}
             alt="Flare"
-            className={`absolute left-[-50px] top-[-100px] md:top-[-290px] md:left-[-100px]`}
+            className={`absolute left-[-50px] top-[-100px] md:top-[-90px] md:w-[50%] md:left-[70px]`}
           />
           <img
             src={Flare2}
@@ -69,7 +69,7 @@ const Prizes = () => {
           </div>
 
           <div
-            className={`flex gap-2 items-center justify-center mt-[6rem] md:w-[60%] md:mt-0 md:gap-4 relative z-[40]`}
+            className={`flex gap-2 items-center justify-center mt-[9rem] md:w-[60%] md:mt-0 md:gap-4 relative z-[40]`}
           >
             <div
               className={`relative border-2 border-[#D434FE] bg-[rgba(214,52,254,0.08)] rounded-[12px] flex justify-center items-end ${style._rewards_div} h-[132px] md:p-4`}
