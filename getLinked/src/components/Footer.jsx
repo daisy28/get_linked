@@ -35,10 +35,10 @@ const Footer = () => {
                               <Link to="/contact">Register</Link>
                               <div className={`flex items-center gap-4`}>
                                    <p className={`text-[#D434FE] font-[500] text-[16px] leading-[36px]`}>Follow us</p>
-                                   <img src={Instagram} alt="Instagram" />
-                                   <img src={Twitter} alt="Twitter" />
-                                   <img src={Facebook} alt="Facebook" />
-                                   <img src={Linkedin} alt="Linkedin" />
+                                   <a href="#"><img src={Instagram} alt="Instagram" /></a>
+                                   <a href="#"><img src={Twitter} alt="Twitter" /></a>
+                                   <a href="#"><img src={Facebook} alt="Facebook" /></a>
+                                   <a href="#"><img src={Linkedin} alt="Linkedin" /></a>
                               </div>
                          </div>
                     </div>

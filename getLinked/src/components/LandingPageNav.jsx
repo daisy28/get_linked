@@ -1,6 +1,6 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Toggle from "../assets/Vector (1).svg";
 import { MdClose } from "react-icons/md";
 import style from "./style.module.css";
@@ -9,6 +9,9 @@ import Circle from "../assets/Group 1.svg";
 
 const LandingPageNav = () => {
   const [toggle, setToggle] = useState(false);
+  const location = useLocation();
+  const splitLocation = location.pathname;
+
   return (
     <nav className={`pt-6 pb-2 px-6 bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}>
       <div
@@ -35,7 +38,7 @@ const LandingPageNav = () => {
         
         <div className={`relative  ${toggle? `block` : `hidden`}`}>
           <div
-              className={`bg-[#140D27] w-[270px] z-[90] absolute right-[-20px] top-[-38px] ml-auto p-6 px-8 flex flex-col rounded-[8px] shadow-lg gap-8`}
+              className={`bg-[#140D27] w-[270px] z-[90] absolute right-[-24px] top-[-38px] ml-auto p-6 px-8 flex flex-col rounded-[8px] shadow-lg gap-8`}
             >
               <div className={`relative`}>
                 <img src={Circle} alt="" className={`relative ml-auto`} />
@@ -46,12 +49,12 @@ const LandingPageNav = () => {
                 
               </div>
               <div
-                className={`flex flex-col gap-4 text-[#fff] text-[1.1rem] font-[400] leading-[24px]`}
+                className={`flex flex-col gap-4 text-[#fff] text-[1.1rem] font-[400] leading-[24px] `}
             >
                 <AnchorLink href="#Timeline">Timeline</AnchorLink>
                 <AnchorLink href="#Intro">Intro</AnchorLink>
                 <AnchorLink href="#Faqs">FAQs</AnchorLink>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" className={`${splitLocation === "/contact" ? `text-[#d434fe]` : `text-[#fff]`}`}>Contact</Link>
                 <button
                   className={`${style._btn_style} w-[172px] h-[53px] rounded-[4px] text-[#fff] font-[400] text-[16px] my-4`}
                 >
@@ -69,7 +72,7 @@ const LandingPageNav = () => {
               <AnchorLink href="#Timeline">Timeline</AnchorLink>
               <AnchorLink href="#Intro">Intro</AnchorLink>
               <AnchorLink href="#Faqs">FAQs</AnchorLink>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" className={`${splitLocation === "/contact" ? `text-[#d434fe]` : `text-[#fff]`}`}>Contact</Link>
             </div>
                 
             <button

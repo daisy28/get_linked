@@ -1,66 +1,50 @@
-:root {
-     --blue: #150E28;
-     --light-purple: #903AFF;
-     --light-pink: #D434FE;
-     --lemon: #80FF00;
-     /* font: unicaone */
-}
-
 ._btn_style {
-     background-image: linear-gradient(to right, #FF26B9, #D434FE, #903AFF);
+  background-image: linear-gradient(to right, #ff26b9, #d434fe, #903aff);
 }
 
 ._header_div,
 ._hero_div {
-     width: 272px;
+  width: 272px;
 }
 
 ._hero_text {
-     font-size: 15px;
+  font-size: 15px;
 }
-
-/* ._smart_glass {
-     background-image: url("../assets/man-wearing-smart-glasses-touching-virtual-screen 1.svg");
-     background-size: contain;
-     background-repeat: no-repeat;
-} */
 
 ._hackathon {
-     font-size: 28.7px;
+  font-size: 28.7px;
 }
 
 ._rewards_div {
-     padding: .75rem;
+  padding: 0.75rem;
 }
 
+@media screen and (max-width: 300px) {
+  ._header_div,
+  ._hero_div {
+    width: 240px;
+  }
 
+  ._hero_text {
+    font-size: 13px;
+  }
 
-@media screen and (max-width: 300px){
-     ._header_div,
-     ._hero_div {
-     width: 240px;
-     }
+  ._hackathon {
+    font-size: 22.8px;
+  }
 
-     ._hero_text {
-     font-size: 13px;
-}
-
-     ._hackathon {
-     font-size: 22.8px;
-}
-
-._rewards_div {
-     padding: .35rem;
-}
+  ._rewards_div {
+    padding: 0.35rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
-     ._header_div {
-          width: 290px;
-     }
+  ._header_div {
+    width: 290px;
+  }
 
-     ._hero_div {
-          width: 100%;
-          max-width: 720px;
-     }
+  ._hero_div {
+    width: 100%;
+    max-width: 720px;
+  }
 }
