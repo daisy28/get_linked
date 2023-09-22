@@ -7,6 +7,7 @@ import KeyAttributes from "../components/KeyAttributes";
 import Faqs from "../components/Faqs";
 import Timeline from "../components/Timeline";
 import Prizes from "../components/Prizes";
+import Partners from "../components/Partners";
 
 const LandingPage = () => {
   return (
@@ -19,6 +20,7 @@ const LandingPage = () => {
       <Faqs />
       <Timeline />
       <Prizes />
+      <Partners />
     </section>
   );
 };
