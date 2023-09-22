@@ -32,7 +32,7 @@ const Prizes = () => {
           <img
             src={Flare}
             alt="Flare"
-            className={`absolute left-[-50px] top-[-100px] md:top-[-290px] md:left-[-40px]`}
+            className={`absolute left-[-50px] top-[-100px] md:top-[-290px] md:left-[-100px]`}
           />
           <img
             src={Flare2}
@@ -65,11 +65,11 @@ const Prizes = () => {
             className={`absolute left-[20px] bottom-[250px] w-[10px] animate-ping delay-300 duration-100 ease-in md:bottom-[90px] md:right-[140px]`}
           />
           <div className={`my-4 md:my-0`}>
-            <img src={Reward} alt="Reward" />
+            <img src={Reward} alt="Reward" className={`relative z-[40]`} />
           </div>
 
           <div
-            className={`flex gap-2 items-center justify-center mt-[6rem] md:w-[60%] md:mt-0 md:gap-4 `}
+            className={`flex gap-2 items-center justify-center mt-[6rem] md:w-[60%] md:mt-0 md:gap-4 relative z-[40]`}
           >
             <div
               className={`relative border-2 border-[#D434FE] bg-[rgba(214,52,254,0.08)] rounded-[12px] flex justify-center items-end ${style._rewards_div} h-[132px] md:p-4`}
@@ -77,7 +77,7 @@ const Prizes = () => {
               <img
                 src={SilverMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-42%] md:top-[-65%]`}
+                className={`absolute top-[-52%] md:top-[-80%]`}
               />
               <div>
                 <div className={`flex flex-col`}>
@@ -106,7 +106,7 @@ const Prizes = () => {
               <img
                 src={GoldMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-34%] md:top-[-62%] scale-150`}
+                className={`absolute top-[-36%] md:top-[-72%] scale-150`}
               />
               <div>
                 <div className={`flex flex-col`}>
@@ -136,7 +136,7 @@ const Prizes = () => {
               <img
                 src={BronzeMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-42%] md:top-[-65%]`}
+                className={`absolute top-[-52%] md:top-[-73%]`}
               />
               <div>
                 <div className={`flex flex-col`}>

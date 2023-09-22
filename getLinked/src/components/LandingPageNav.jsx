@@ -1,3 +1,4 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Toggle from "../assets/Vector (1).svg";
@@ -8,6 +9,12 @@ const LandingPageNav = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className={`pt-6 pb-2 px-6 bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}>
+      <div
+          className={`fixed h-[100vh] overflow-y-hidden bottom-0 bg-[#140d27dc] blur-md z-[60] top-[0px] left-0 right-[0] delay-300 transition ease-in duration-1000  ${
+            toggle ? `block` : `hidden`
+          }`} onClick={() => setToggle(prevState => !prevState)}
+        >
+        </div>
       <div className={`flex justify-between items-center`}>
         <Link
           to="/"
@@ -23,26 +30,26 @@ const LandingPageNav = () => {
           <img src={Toggle} alt="Menu toggle" />
         </div>
 
-        <div
-          className={`absolute bottom-0 bg-[#140d2768] top-[0px] left-0 right-[0]  delay-300 transition ease-in duration-1000  ${
-            toggle ? `block` : `hidden`
-          }`}
-        >
-            <div
-              className={`bg-[#140D27] w-[70%] relative right-0 ml-auto p-6 px-8 flex flex-col rounded-[8px] shadow-lg z-10 gap-8`}
+        
+        <div className={`relative  ${toggle? `block` : `hidden`}`}>
+          <div
+              className={`bg-[#140D27] w-[270px] z-[90] absolute right-[-20px] top-[-38px] ml-auto p-6 px-8 flex flex-col rounded-[8px] shadow-lg gap-8`}
             >
-              <div>
+              <div className={``}>
+              <div className={`w-[20px] h-[20px] flex justify-center items-center border border-[#d434FE] rounded-full ml-auto mb-6`}>
                 <MdClose
-                  className={`cursor-pointer text-[#fff] ml-auto mb-4`}
+                  className={`cursor-pointer text-[#fff]`}
                   onClick={() => setToggle((prevToggle) => !prevToggle)}
                 />
+                </div>
+                
               </div>
               <div
                 className={`flex flex-col gap-4 text-[#fff] text-[1.1rem] font-[400] leading-[24px]`}
-              >
-                <Link to="">Timeline</Link>
-                <Link to="">Overview</Link>
-                <Link to="">FAQs</Link>
+            >
+                <AnchorLink href="#Timeline">Timeline</AnchorLink>
+                <AnchorLink href="#Intro">Intro</AnchorLink>
+                <AnchorLink href="#Faqs">FAQs</AnchorLink>
                 <Link to="/contact">Contact</Link>
                 <button
                   className={`${style._btn_style} w-[172px] h-[53px] rounded-[4px] text-[#fff] font-[400] text-[16px] my-4`}
@@ -52,14 +59,15 @@ const LandingPageNav = () => {
               </div>
             </div>
         </div>
+        
         <div className={`hidden md:block`}>
           <div
                 className={`flex items-center gap-4 text-[#fff] text-[1.1rem] font-[400] leading-[24px]`}
               >
             <div className={`mr-8 flex items-center gap-6`}>
-              <Link to="">Timeline</Link>
-              <Link to="">Overview</Link>
-              <Link to="">FAQs</Link>
+              <AnchorLink href="#Timeline">Timeline</AnchorLink>
+              <AnchorLink href="#Intro">Intro</AnchorLink>
+              <AnchorLink href="#Faqs">FAQs</AnchorLink>
               <Link to="/contact">Contact</Link>
             </div>
                 

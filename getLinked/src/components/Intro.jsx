@@ -5,7 +5,7 @@ import Star from "../assets/star pu.svg";
 const Intro = () => {
   return (
     <section
-      className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}
+      className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`} id="Intro"
     >
       <div className={`md:flex justify-center gap-6 items-center xl:gap-0`}>
         <div className={`mb-[4rem] md:mb-0 relative md:w-[50%]`}>
@@ -13,7 +13,7 @@ const Intro = () => {
           <img
             src={Arrow}
             alt="curly arrow"
-            className={`absolute w-[30px] left-[45%] bottom-[-30px] md:bottom-[10px] md:left-[310px] lg:left-[390px] xl:left-[430px]`}
+            className={`absolute w-[30px] left-[45%] bottom-[-30px] md:bottom-[10px] md:left-[320px] lg:left-[390px] xl:left-[430px]`}
           />
           <img
             src={Star}

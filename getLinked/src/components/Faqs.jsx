@@ -1,14 +1,20 @@
+import { useState } from "react";
 import { BsPlus } from "react-icons/bs";
 import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star (1).svg";
 import Star3 from "../assets/star.svg";
-import Illustration from "../assets/cwok_casual_21 1.svg";
-import Question from "../assets/_ (1).svg";
+import ImgMobile from "../assets/Image1.svg";
 
 const Faqs = () => {
+  const [show, setShow] = useState(false);
+  const [showOne, setShowOne] = useState(false);
+  const [showTwo, setShowTwo] = useState(false);
+  const [showThree, setShowThree] = useState(false);
+  const [showFour, setShowFour] = useState(false);
+  const [showFive, setShowFive] = useState(false);
   return (
     <section
-      className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}
+      className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`} id="Faqs"
     >
       <div className={`md:flex justify-center items-center xl:gap-0`}>
         <div className={`relative text-center md:text-left md:w-[50%]`}>
@@ -31,75 +37,106 @@ const Faqs = () => {
             <div
               className={` border-b border-[#D434FE] pb-2 flex justify-between items-end mb-4`}
             >
-              <p
+              <div>
+                <p
                 className={`text-left text-[13px] font-[400] text-[#fff] leading-[30px]`}
               >
                 {" "}
                 Can I work on a project I started before the hackathon?
               </p>
-              <BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />
+              <p id="one" className={`${show ? `block` : `hidden`} text-left text-[10px] font-[400] text-[#fff] leading-[30px]`}>Yes, you can typically work on a project you started before the hackathon. However, it&apos;s important to check the specific rules and guidelines of the hackathon you&apos;re participating in, as some events may have restrictions or requirements regarding pre-existing projects.</p>
+              </div>
+              <div onClick={() => setShow(prevState => !prevState)}>
+                {show ? <p className={`text-[20px] cursor-pointer text-[#D434FE]`}>-</p> :<BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />}
+              </div>
+              
             </div>
             <div
               className={` border-b border-[#D434FE] pb-2 flex justify-between items-end mb-4`}
             >
-              <p
+               <div>
+                <p
                 className={`text-left text-[13px] font-[400] text-[#fff] leading-[30px]`}
               >
                 {" "}
-                What happens if I need help during the hackathon?
+                What happens if I need help during the Hackathon?
               </p>
-              <BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />
+              <p id="one" className={`${showOne ? `block` : `hidden`} text-left text-[10px] font-[400] text-[#fff] leading-[30px]`}>During the hackathon, you can seek help from mentors, organizers, or fellow psrticipants. There are often designated channels or support systems, such as mentorship sessions or online forums, where you can ask questions and get assistance with technical or project-related issues.</p>
+              </div>
+              <div onClick={() => setShowOne(prevState => !prevState)}>
+                {showOne ?<p className={`text-[20px] cursor-pointer text-[#D434FE]`}>-</p> :<BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />}
+              </div>
             </div>
             <div
               className={` border-b border-[#D434FE] pb-2 flex justify-between items-end mb-4`}
             >
-              <p
+               <div>
+                <p
                 className={`text-left text-[13px] font-[400] text-[#fff] leading-[30px]`}
               >
                 {" "}
-                What happens if I dont have an idea for a project?
+                What happens if I don&apos;t have an idea for a project?
               </p>
-              <BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />
+              <p id="one" className={`${showTwo ? `block` : `hidden`} text-left text-[10px] font-[400] text-[#fff] leading-[30px]`}>If you don&apos;t have an idea for a project, you can often join a team that has an idea you&apos;re interested in, or you can brainstorm and collaborate with other participants to come up with a project concept. Many hackathons encourage teamwork and creativity, so don&apos;t hesitate to reach out to others for collaboration.</p>
+              </div>
+              <div onClick={() => setShowTwo(prevState => !prevState)}>
+                {showTwo ?<p className={`text-[20px] cursor-pointer text-[#D434FE]`}>-</p> :<BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />}
+              </div>
             </div>
             <div
               className={` border-b border-[#D434FE] pb-2 flex justify-between items-end mb-4`}
             >
-              <p
+               <div>
+                <p
                 className={`text-left text-[13px] font-[400] text-[#fff] leading-[30px]`}
               >
                 {" "}
-                Can I join a team or do I have to come with one?
+                Can I join a team or do I have to come up with one?
               </p>
-              <BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />
+              <p id="one" className={`${showThree ? `block` : `hidden`} text-left text-[10px] font-[400] text-[#fff] leading-[30px]`}>Most hackathons allow both individuals and teams to participate. You can typically join a team at the hackathon itself, and organizers may help match participants who are looking for team members. Some hackathons also have specific team size size limits, so be sure to check the event&apos;s guidelines.</p>
+              </div>
+              <div onClick={() => setShowThree(prevState => !prevState)}>
+                {showThree ?<p className={`text-[20px] cursor-pointer text-[#D434FE]`}>-</p> :<BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />}
+              </div>
             </div>
             <div
               className={` border-b border-[#D434FE] pb-2 flex justify-between items-end mb-4`}
             >
-              <p
+               <div>
+                <p
                 className={`text-left text-[13px] font-[400] text-[#fff] leading-[30px]`}
               >
                 {" "}
-                What happens after the hackathon
+                What happens after the hackathon ends?
               </p>
-              <BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />
+              <p id="one" className={`${showFour ? `block` : `hidden`} text-left text-[10px] font-[400] text-[#fff] leading-[30px]`}>After the hackathon concludes, there will be the following: project presentation, networking sessions, continued project development and community engagement.</p>
+              </div>
+              <div onClick={() => setShowFour(prevState => !prevState)}>
+                {showFour ?<p className={`text-[20px] cursor-pointer text-[#D434FE]`}>-</p> :<BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />}
+              </div>
             </div>
             <div
               className={` border-b border-[#D434FE] pb-2 flex justify-between items-end mb-4`}
             >
-              <p
+               <div>
+                <p
                 className={`text-left text-[13px] font-[400] text-[#fff] leading-[30px]`}
               >
                 {" "}
-                Can I work on project I started before the hackathon?
+                Can I work on a project I started before the hackathon?
               </p>
-              <BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />
+              <p id="one" className={`${showFive ? `block` : `hidden`} text-left text-[10px] font-[400] text-[#fff] leading-[30px]`}>Yes, you can typically work on a project you started before the hackathon. However, it&apos;s important to check the specific rules and guidelines of the hackathon you&apos;re participating in, as some events may have restrictions or requirements regarding pre-existing projects.</p>
+              </div>
+              <div onClick={() => setShowFive(prevState => !prevState)}>
+                {showFive ?<p className={`text-[20px] cursor-pointer text-[#D434FE]`}>-</p> :<BsPlus className={`cursor-pointer text-[#D434FE] text-[20px]`} />}
+              </div>
             </div>
           </div>
         </div>
         <div
           className={`relative my-8 mt-[6rem] md:my-0 md:mt-[4rem] md:w-[50%]`}
         >
-          <img src={Illustration} alt="Illustration" />
+          <img src={ImgMobile} alt="Illustration" className={``} />
           <img
             src={Star}
             alt="Star"
@@ -120,21 +157,7 @@ const Faqs = () => {
             alt="Star"
             className={`absolute right-[50px] bottom-[-40px] w-[18px] animate-ping delay-300 duration-100 ease-in md:bottom-[-20px] md:right-[90px]`}
           />
-          <img
-            src={Question}
-            alt="Star"
-            className={`absolute left-[10px] top-[-40px] w-[30px] md:top-[-10px] md:left-[40px]`}
-          />
-          <img
-            src={Question}
-            alt="Star"
-            className={`absolute left-[90px] top-[-60px] w-[40px] md:top-[-80px] md:left-[110px]`}
-          />
-          <img
-            src={Question}
-            alt="Star"
-            className={`absolute left-[200px] top-[-40px] w-[30px] md:top-[-10px] md:left-[180px]`}
-          />
+          
         </div>
       </div>
     </section>

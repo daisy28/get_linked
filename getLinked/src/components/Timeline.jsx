@@ -6,7 +6,7 @@ import Star3 from "../assets/star.svg";
 const Timeline = () => {
   return (
     <section
-      className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}
+      className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`} id="Timeline"
     >
       <div className={``}>
         <div className={`text-center mb-10`}>

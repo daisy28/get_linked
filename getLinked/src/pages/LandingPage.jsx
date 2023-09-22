@@ -8,6 +8,7 @@ import Faqs from "../components/Faqs";
 import Timeline from "../components/Timeline";
 import Prizes from "../components/Prizes";
 import Partners from "../components/Partners";
+import PrivacyPolicy from "../components/PrivacyPolicy";
 
 const LandingPage = () => {
   return (
@@ -21,6 +22,7 @@ const LandingPage = () => {
       <Timeline />
       <Prizes />
       <Partners />
+      <PrivacyPolicy />
     </section>
   );
 };

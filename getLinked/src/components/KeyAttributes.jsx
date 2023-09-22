@@ -5,8 +5,8 @@ import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star (1).svg";
 import Star3 from "../assets/star.svg";
 import Flare2 from "../assets/Purple-Lens-Flare-PNG.svg";
-import Ellipse from "../assets/Ellipse 2.svg";
 import style from "./style.module.css";
+import ImgMobile from "../assets/Image2.svg";
 
 const KeyAttributes = () => {
   const data = [
@@ -40,14 +40,13 @@ const KeyAttributes = () => {
           <img
             src={Illustration}
             alt="Illustration"
-            className={`z-20 relative`}
+            className={`z-[40] relative md:hidden`}
           />
           <img
-            src={Ellipse}
-            alt="Ellipse"
-            className={`hidden md:block absolute w-[100px] top-[-30px] left-[30px] lg:left-[60px] xl:left-[90px]`}
+            src={ImgMobile}
+            alt="Illustration"
+            className={`z-[40] relative hidden md:block`}
           />
-
           <img
             src={Flare}
             alt="Flare"
@@ -76,7 +75,7 @@ const KeyAttributes = () => {
             Judging Criteria{" "}
             <span className={`text-[#D434FE]`}>Key attributes</span>
           </h1>
-          <div>
+          <div className={`relative z-[40]`}>
             {data.map((item) => {
               return (
                 <p

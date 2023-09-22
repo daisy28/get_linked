@@ -3,6 +3,7 @@ import Star2 from "../assets/star.svg";
 import Flare from "../assets/Purple-Lens-Flare-PNG (1).svg";
 import Flare2 from "../assets/Purple-Lens-Flare-PNG.svg";
 import Img1 from "../assets/7450159 1.svg";
+import ImgMobile from "../assets/Image3.svg"
 
 const Rules = () => {
   return (
@@ -11,16 +12,17 @@ const Rules = () => {
     >
       <div className={`md:flex justify-center gap-6 items-center xl:gap-0`}>
         <div className={`relative md:w-[50%] md:order-4`}>
-          <img src={Img1} alt="ideas" />
+          <img src={Img1} alt="ideas" className={`md:hidden relative z-[40]`} />
+          <img src={ImgMobile} alt="ideas" className={`hidden md:block relative z-[40]`} />
           <img
             src={Flare}
             alt="star"
-            className={`absolute right-[70px] top-[-90px] w-full md:top-[20px] md:right-[60px] md:hidden`}
+            className={`absolute z-[-10] right-[70px] top-[-90px] w-full md:top-[20px] md:right-[60px] md:hidden`}
           />
           <img
             src={Flare2}
             alt="star"
-            className={`absolute right-[-23px] top-[-150px] w-[50%] md:top-[120px] md:right-[-22px] lg:right-[-45px] hidden md:block`}
+            className={`absolute z-[10] right-[-23px] top-[-150px] w-[50%] md:top-[120px] md:right-[-22px] lg:right-[-45px] hidden md:block`}
           />
           <img
             src={Star2}
@@ -50,11 +52,11 @@ const Rules = () => {
             className={`absolute right-[70px] top-[60px] w-full md:top-[-100px] md:right-[20px] hidden md:block`}
           />
           <h1
-            className={`text-[24px] font-[600] leading-[32px] text-[#fff] mb-4`}
+            className={`relative text-[24px] font-[600] leading-[32px] text-[#fff] mb-4 z-[40]`}
           >
             Rules and <span className={`text-[#D434FE]`}>Guidlines</span>
           </h1>
-          <p className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}>
+          <p className={`relative text-[13px] font-[400] text-[#fff] leading-[30px] z-[40]`}>
             Our tech hackathon is a melting point pot of visionaries, and its
             purpose is as clear as day; to shape the future. Whether you&apos;re
             a coding genuis, a design maverick, or a concept wizard, you&apos;ll

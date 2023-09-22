@@ -1,21 +1,43 @@
-import Liberty1 from "../assets/Liberty company logo white colour.svg";
-import Liberty2 from "../assets/Liberty company logo white colour.svg";
-import Winwise from "../assets/Winwise logo White colour 1.svg";
-import Whisper from "../assets/wisper logo white.svg";
-import Paybox from "../assets/Paybox.svg";
-import Vizual from "../assets/Vizual Plus.svg";
+import PartnersImg from "../assets/Partner and sponsors section.svg";
 import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star.svg";
 import Flare from "../assets/Purple-Lens-Flare-PNG (1).svg";
+import Flare2 from "../assets/Purple-Lens-Flare-PNG.svg";
+
 
 
 const Partners = () => {
      return(
           <section
       className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}>
-               <div>
+               <div className={`relative`}>
+                    <img
+            src={Flare}
+            alt="Flare"
+            className={`absolute left-[-100px] top-[-150px] md:top-[-290px] md:left-[-280px]`}
+          />
+          <img
+            src={Flare2}
+            alt="flare"
+            className={`absolute right-[-23px] bottom-[-230px] z-[20] w-[50%] md:bottom-[-380px] md:right-[-22px] lg:right-[-47px] lg:bottom-[-510px] xl:bottom-[-810px]`}
+          />
+          <img
+            src={Star}
+            alt="Star"
+            className={`absolute left-[20px] top-[180px] w-[10px] animate-ping delay-300 duration-100 ease-in md:top-[-40px] md:left-[90px]`}
+          />
+          <img
+            src={Star}
+            alt="Star"
+            className={`absolute right-[50px] bottom-[10px] w-[10px] animate-ping delay-300 duration-100 ease-in md:top-[-80px] md:right-[90px]`}
+          />
+          <img
+            src={Star2}
+            alt="Star"
+            className={`absolute left-[190px] bottom-[-40px] w-[10px] animate-ping delay-300 duration-100 ease-in md:bottom-[-35px] md:left-[200px] lg:bottom-[180px] lg:left-[250px] xl:bottom-[250px] xl:left-[350px]`}
+          />
                     <div
-          className={`relative text-center md:text-left md:w-[50%] lg:w-[45%] md:ml-auto mb-8`}
+          className={`relative z-[40] text-center md:w-[50%] mx-auto mb-8`}
         >
           <h1
             className={`text-[24px] font-[600] leading-[32px] text-[#fff] mb-4`}
@@ -26,40 +48,11 @@ const Partners = () => {
             {" "}
             Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors.
           </p>
-                    </div>
-                    <div className={`border border-[#D434FE] p-4 py-8 flex justify-center items-center`}>
-                         <div className={`grid grid-cols-3 grid-rows-2 gap-4 relative`}>
-                              <div className={`border-r-4 border-[#D434FE] p-4 relative`
-                              }>
-                                   <img src={Liberty1} alt="" />
-                                   <div className={`w-[60px] h-[3px] bg-[#D434FE] bottom-[-10px] left-[5px]  absolute`}></div>
-                              </div>
-                              <div className={`border-r-4 border-[#D434FE] p-4 relative`
-                              }>
-                                   <img src={Liberty2} alt="" />
-                                   <div className={`w-[60px] h-[4px] bg-[#D434FE] bottom-[-10px] left-[5px]  absolute`}></div>
-                              </div>
-                              <div className={`p-4 relative`
-                              }>
-                                   <img src={Winwise} alt="" />
-                                   <div className={`w-[60px] h-[4px] bg-[#D434FE] bottom-[-10px] left-[5px]  absolute`}></div>
-                              </div>
-                              <div className={`border-r-4  border-[#D434FE] p-4`
-                              }>
-                                   <img src={Whisper} alt="" />
-                              </div>
-                              <div className={`border-r-4  border-[#D434FE] p-4`
-                              }>
-                                   <img src={Paybox} alt="" />
-                              </div>
-                              <div className={`p-4`
-                              }>
-                                   <img src={Vizual} alt="" />
-                              </div>
-
-                         </div>
-
-                    </div>
+          </div>
+          
+          <div className={`border-2 border-[#D434FE] relative z-[40]`}>
+               <img src={PartnersImg} alt="Partners and sponsors" />
+          </div>
                </div>
           </section>
      )
