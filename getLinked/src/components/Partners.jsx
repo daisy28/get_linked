@@ -66,7 +66,7 @@ const Partners = () => {
           </p>
           </div>
           
-           <div className={`md:w-[600px] mx-auto border border-[#D434FE] relative z-[40] p-4 rounded-[8px] md:p-8 py-6`}
+           <div className={`md:w-[600px] lg:p-[4rem] mx-auto border border-[#D434FE] relative z-[40] p-4 rounded-[8px] md:p-8 py-6`}
            ref={ref}
       style={{
         transform: inView ? `none` : `translateX(-40px)`,
