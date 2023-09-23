@@ -1,10 +1,15 @@
-import PartnersImg from "../assets/Partner and sponsors section.svg";
 import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star.svg";
 import Flare from "../assets/Purple-Lens-Flare-PNG (1).svg";
 import Flare2 from "../assets/Purple-Lens-Flare-PNG.svg";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Liberty from "../assets/spons1.png";
+import Liberty2 from "../assets/libertypay.svg";
+import Win from "../assets/Winwise logo White colour 1.svg";
+import Wisper from "../assets/wisper logo white.svg";
+import Paybox from "../assets/Paybox.svg";
+import Vizual from "../assets/Vizual Plus.svg";
 
 
 
@@ -61,15 +66,27 @@ const Partners = () => {
           </p>
           </div>
           
-           <div className={`border border-[#D434FE] relative z-[40]`}
+           <div className={`md:w-[600px] mx-auto border border-[#D434FE] relative z-[40] p-4 rounded-[8px] md:p-8 py-6`}
            ref={ref}
       style={{
         transform: inView ? `none` : `translateX(-40px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
-               <img src={PartnersImg} alt="Partners and sponsors" />
+             <div className={`grid grid-cols-3 grid-rows-2`}>
+             <div className={`mr-4 border-b-2 border-[#D434FE] text-center p-4 flex justify-center items-center mx-auto text-white`}><img src={Liberty} alt="Liberty"/></div>
+             <div className={`mb-4 text-center border-l-2 border-r-2 border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Liberty2} alt="Liberty2"/></div>
+           <div className={`ml-4 text-center border-b-2  border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Win} alt="Winwise"/></div>
+           
+             <div className={`mt-4 text-center border-r-2 border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Wisper} alt="Wisper"/></div>
+             <div className={`ml-4 mr-4 text-center border-t-2 border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Paybox} alt="Paybox"/></div>
+             <div className={`mt-4 text-center  border-[#D434FE] border-l-2 p-4 flex justify-center items-center mx-auto text-white`}><img src={Vizual} alt="Vizual"/></div>
+           </div>
           </div>
-               </div>
+
+           
+         </div>
+           
+         
           </section>
      )
 }
