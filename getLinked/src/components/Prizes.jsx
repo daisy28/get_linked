@@ -14,16 +14,16 @@ const Prizes = () => {
     <section
       className={`p-6 py-[4rem] bg-[#100B20] border-0 lg:px-[3rem] pb-[8rem]`}
     >
-      <div className={`flex flex-col gap-6`}>
+      <div className={`flex flex-col gap-6 lg:gap-0`}>
         <div
           className={`relative text-center md:text-left md:w-[50%] lg:w-[45%] md:ml-auto`}
         >
           <h1
-            className={`text-[24px] font-[600] leading-[32px] text-[#fff] mb-4`}
+            className={`font-face-cd text-[20px] font-[700] leading-[24.6px] text-[#fff] mb-4 md:text-[32px] md:leading-[39.36px]`}
           >
             Prizes and<span className={`text-[#D434FE]`}> Rewards</span>
           </h1>
-          <p className={`text-[13px] font-[400] text-[#fff] leading-[30px] mb-10`}>
+          <p className={`font-[Montserrat] text-[12px] font-[400] text-[#fff] leading-[20.51px] mb-10 md:text-[16px] md:leading-[27.34px]`}>
             {" "}
             Highlight of the prizes or rewards for winners and for participants.
           </p>
@@ -69,31 +69,31 @@ const Prizes = () => {
           </div>
 
           <div
-            className={`flex gap-2 items-center justify-center mt-[9rem] md:w-[60%] md:mt-0 md:gap-4 relative z-[40]`}
+            className={`flex gap-2 items-center justify-center mt-[9rem] md:w-[60%] md:mt-0 md:gap-4 relative z-[40] lg:w-[70%]`}
           >
             <div
-              className={`relative border-2 border-[#D434FE] bg-[rgba(214,52,254,0.08)] rounded-[12px] flex justify-center items-end ${style._rewards_div} h-[132px] md:p-4`}
+              className={`relative border-2 border-[#D434FE] bg-[rgba(214,52,254,0.08)] rounded-[12px] flex justify-center items-end ${style._rewards_div} h-[132px] md:h-[162px] md:p-4 lg:p-6 lg:py-8`}
             >
               <img
                 src={SilverMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-52%] md:top-[-80%]`}
+                className={`absolute top-[-52%] md:top-[-60%] lg:top-[-73%] xl:top-[-104%]`}
               />
               <div>
                 <div className={`flex flex-col`}>
                   <h1
-                    className={`text-[#fff] text-[14px] md:text-[24px] text-center leading-[24px] font-[700]`}
+                    className={`text-[#fff] text-[14px] xl:leading-[32.56px] md:text-[22px] md:leading-[40px] font-[Montserrat] text-center leading-[24px] font-[700] xl:text-[28px]`}
                   >
                     2nd
                   </h1>
                   <p
-                    className={`text-[10px] text-[#fff] md:text-[16px] text-center leading-[24px] font-[600]`}
+                    className={`text-[10px] text-[#fff] xl:text-[22px] text-center leading-[24px] font-[600] md:text-[16px] md:leading-[32px] xl:leading-[31.94px] font-[Montserrat]`}
                   >
                     Runner
                   </p>
                 </div>
                 <p
-                  className={`text-[#D434FE] text-[14px] md:text-[18px] text-center leading-[32px] font-[700]`}
+                  className={`text-[#D434FE]  text-[14px] xl:text-[26px] md:text-[18px] md:leading-[32px] xl:leading-[42px] text-center leading-[32px] font-[700] font-[Montserrat]`}
                 >
                   N300,000
                 </p>
@@ -101,29 +101,29 @@ const Prizes = () => {
             </div>
 
             <div
-              className={`relative border-2 border-[#903AFF] bg-[rgba(143,58,255,0.08)] rounded-[12px] flex justify-center items-end ${style._rewards_div} h-[162px] md:p-4`}
+              className={`relative border-2 border-[#903AFF] bg-[rgba(143,58,255,0.08)] rounded-[12px] flex justify-center items-end ${style._rewards_div} h-[162px] md:h-[182px] md:p-4 lg:p-6 lg:py-8`}
             >
               <img
                 src={GoldMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-36%] md:top-[-72%] scale-150`}
+                className={`absolute top-[-36%] md:top-[-58%] scale-150 lg:top-[-82%] xl:top-[-107%]`}
               />
               <div>
                 <div className={`flex flex-col`}>
                   <h1
-                    className={`text-[#fff] text-[14px] md:text-[24px] text-center leading-[24px] font-[700]`}
+                    className={`text-[#fff] text-[14px] xl:leading-[32.56px] md:text-[22px] md:leading-[40px] font-[Montserrat] text-center leading-[24px] font-[700] xl:text-[28px]`}
                   >
                     1st
                   </h1>
                   <p
-                    className={`text-[10px] text-[#fff] md:text-[16px] text-center leading-[24px] font-[600]`}
+                    className={`text-[10px] text-[#fff] xl:text-[22px] text-center leading-[24px] font-[600] md:text-[16px] md:leading-[32px] xl:leading-[31.94px] font-[Montserrat]`}
                   >
                     Runner
                   </p>
                 </div>
 
                 <p
-                  className={`text-[#903AFF] text-[14px] md:text-[18px] text-center leading-[32px] font-[700]`}
+                  className={`text-[#903AFF]  text-[14px] xl:text-[26px] md:text-[18px] md:leading-[32px] xl:leading-[42px] text-center leading-[32px] font-[700] font-[Montserrat]`}
                 >
                   N400,000
                 </p>
@@ -131,28 +131,28 @@ const Prizes = () => {
             </div>
 
             <div
-              className={`relative border-2 border-[#D434FE] bg-[rgba(214,52,254,0.08)] rounded-[12px] flex justify-center items-end ${style._rewards_div} h-[132px] md:p-4`}
+              className={`relative border-2 border-[#D434FE] bg-[rgba(214,52,254,0.08)] rounded-[12px] flex justify-center items-end ${style._rewards_div} h-[132px] md:h-[162px] md:p-4 lg:p-6 lg:py-8`}
             >
               <img
                 src={BronzeMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-52%] md:top-[-73%]`}
+                className={`absolute top-[-52%] md:top-[-53%] lg:top-[-69%] xl:top-[-97%]`}
               />
               <div>
                 <div className={`flex flex-col`}>
                   <h1
-                    className={`text-[#fff] text-[14px] md:text-[24px] text-center leading-[24px] font-[700]`}
+                    className={`text-[#fff] text-[14px] xl:leading-[32.56px] md:text-[22px] md:leading-[40px] font-[Montserrat] text-center leading-[24px] font-[700] xl:text-[28px]`}
                   >
                     3rd
                   </h1>
                   <p
-                    className={`text-[10px] text-[#fff] md:text-[16px] text-center leading-[24px] font-[600]`}
+                    className={`text-[10px] text-[#fff] xl:text-[22px] text-center leading-[24px] font-[600] md:text-[16px] md:leading-[32px] xl:leading-[31.94px] font-[Montserrat]`}
                   >
                     Runner
                   </p>
                 </div>
                 <p
-                  className={`text-[#D434FE] text-[14px] md:text-[18px] text-center leading-[32px] font-[700]`}
+                  className={`text-[#D434FE] text-[14px] xl:text-[26px] md:text-[18px] md:leading-[32px] xl:leading-[42px] text-center leading-[32px] font-[700] font-[Montserrat]`}
                 >
                   N150,000
                 </p>

@@ -1,5 +1,14 @@
 ._btn_style {
   background-image: linear-gradient(to right, #ff26b9, #d434fe, #903aff);
+  border-radius: 4px;
+}
+
+._btn_style_hover:hover {
+  background-image: linear-gradient(to right, #ff26b9, #d434fe, #903aff);
+  box-shadow: inset 0 100vw #140D27;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-origin: border-box;
 }
 
 ._header_div,
@@ -8,7 +17,7 @@
 }
 
 ._hero_text {
-  font-size: 15px;
+  font-size: 13.5px;
 }
 
 ._hackathon {
@@ -19,6 +28,20 @@
   padding: 0.75rem;
 }
 
+._text_style {
+  background: linear-gradient(to right, #ff26b9, #d434fe, #903aff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+._text_style_hover:hover {
+  background: linear-gradient(to right, #ff26b9, #d434fe, #903aff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 @media screen and (max-width: 300px) {
   ._header_div,
   ._hero_div {
@@ -26,7 +49,7 @@
   }
 
   ._hero_text {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   ._hackathon {
@@ -40,11 +63,7 @@
 
 @media screen and (min-width: 768px) {
   ._header_div {
-    width: 290px;
+    width: 760px;
   }
 
-  ._hero_div {
-    width: 100%;
-    max-width: 720px;
-  }
 }

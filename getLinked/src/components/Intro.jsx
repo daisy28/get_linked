@@ -28,12 +28,12 @@ const Intro = () => {
             className={`absolute right-0 top-[40px] w-[8px] animate-ping delay-300 duration-100 ease-in md:top-[20px] md:right-[60px]`}
           />
           <h1
-            className={`text-[24px] font-[600] lading-[32px] text-[#fff] mb-4`}
+            className={`text-[20px] font-[700] leading-[26.6px] font-face-cd text-[#fff] mb-4 md:text-[32px] md:leading-[42.56px]`}
           >
             Introduction to getlinked{" "}
             <span className={`text-[#D434FE]`}>techHackathon 1.0</span>
           </h1>
-          <p className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}>
+          <p className={`font-[Montserrat] text-[13px] font-[400] text-[#fff] leading-[27.5px] md:text-[14px] md:leading-[27.5px]`}>
             Our tech hackathon is a melting point pot of visionaries, and its
             purpose is as clear as day; to shape the future. Whether you&apos;re
             a coding genuis, a design maverick, or a concept wizard, you&apos;ll

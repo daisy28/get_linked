@@ -1,9 +1,11 @@
-import React from "react";
+import RegisterForm from "../components/RegistrationForm";
+import LandingPageNav from "../components/LandingPageNav";
 
 const Register = () => {
      return (
           <section>
-               Register
+               <LandingPageNav />
+              < RegisterForm />
           </section>
      )
 }

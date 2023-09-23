@@ -11,12 +11,12 @@ const Timeline = () => {
       <div className={``}>
         <div className={`text-center mb-10`}>
           <h1
-            className={`text-[24px] font-[600] leading-[32px] text-[#fff] mb-3`}
+            className={`font-face-cd marker: md:text-[32px] md:leading-[42.56px] text-[20px] font-[700] leading-[26.6px] text-[#fff] mb-3`}
           >
             Timeline
           </h1>
           <p
-            className={`text-[13px] font-[400] text-[#fff] leading-[30px] max-w-[280px] mx-auto`}
+            className={`font-[Montserrat] text-[14px] font-[400] text-[#fff] leading-[24.14px] max-w-[280px] mx-auto`}
           >
             {" "}
             Here is the breakdown of the time we anticipate using for the
@@ -44,12 +44,12 @@ const Timeline = () => {
           <div className={`flex flex-col gap-1 items-start`}>
             <div className={`border-l-2 border-[#D434FE] pl-4`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Hackathon Announcement
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 The getlinked tech hackathon 1.0 is formally announced to the
                 general public and teams begin to get ready to register.
@@ -62,7 +62,7 @@ const Timeline = () => {
                 <p className={`text-center text-[10px] font-[600]`}>1</p>
               </div>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -72,12 +72,12 @@ const Timeline = () => {
           <div className={`flex flex-col gap-1 items-start`}>
             <div className={`border-l-2 border-[#D434FE] pl-4`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Team Registration begins
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 Interested teams can now show their interest in the getlinked
                 tech hackathon 1.0 2023 by proceeding to register.
@@ -90,7 +90,7 @@ const Timeline = () => {
                 <p className={`text-center text-[10px] font-[600]`}>2</p>
               </div>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -100,12 +100,12 @@ const Timeline = () => {
           <div className={`flex flex-col gap-1 items-start`}>
             <div className={`border-l-2 border-[#D434FE] pl-4`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Team Registration ends
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 Interested Participant are no longer allowed to register.
               </p>
@@ -117,7 +117,7 @@ const Timeline = () => {
                 <p className={`text-center text-[10px] font-[600]`}>3</p>
               </div>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -127,13 +127,13 @@ const Timeline = () => {
           <div className={`flex flex-col gap-1 items-start`}>
             <div className={`border-l-2 border-[#D434FE] pl-4`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 {" "}
                 Announcement of the accepted teams and ideas
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 All teams whom ideas has been accepted into getlinked tech
                 hackathon 1.0 2023 are formally announced.
@@ -146,7 +146,7 @@ const Timeline = () => {
                 <p className={`text-center text-[10px] font-[600]`}>4</p>
               </div>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -156,12 +156,12 @@ const Timeline = () => {
           <div className={`flex flex-col gap-1 items-start`}>
             <div className={`border-l-2 border-[#D434FE] pl-4`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Getlinked Hackathon 1.0 Officially Begins
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 Accepted teams can now proceed to build their ground breaking
                 skill driven solutions.
@@ -174,7 +174,7 @@ const Timeline = () => {
                 <p className={`text-center text-[10px] font-[600]`}>5</p>
               </div>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -184,12 +184,12 @@ const Timeline = () => {
           <div className={`flex flex-col gap-1 items-start`}>
             <div className={`border-l-2 border-[#D434FE] pl-4`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Demo Day
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 Teams get the the opportunity to pitch their projects to judges.
                 The winner of the hackathon will also be announced on this day.
@@ -202,7 +202,7 @@ const Timeline = () => {
                 <p className={`text-center text-[10px] font-[600]`}>6</p>
               </div>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -230,12 +230,12 @@ const Timeline = () => {
           <div className={`flex items-end`}>
             <div className={`w-[50%] text-right pr-[1.5rem]`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Hackathon Announcement
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 Interested teams can now show their interest in the getlinked
                 tech hackathon 1.0 2023 by proceeding to register.
@@ -252,7 +252,7 @@ const Timeline = () => {
 
             <div className={`w-[50%] pl-[.6rem]`}>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -262,7 +262,7 @@ const Timeline = () => {
           <div className={`flex items-end`}>
             <div className={`w-[50%]`}>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] text-right pr-[1.5rem]`}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] text-right pr-[1.5rem]`}
               >
                 November 18, 2023
               </p>
@@ -279,12 +279,12 @@ const Timeline = () => {
 
             <div className={`w-[50%] pl-[.6rem]`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Team Registration begins
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 Interested Participant are no longer allowed to register
               </p>
@@ -294,12 +294,12 @@ const Timeline = () => {
           <div className={`flex items-end`}>
             <div className={`w-[50%] text-right pr-[1.5rem]`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Team Registration ends
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 Interested Participant are no longer allowed to register.
               </p>
@@ -315,7 +315,7 @@ const Timeline = () => {
 
             <div className={`w-[50%] pl-[.6rem]`}>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -325,7 +325,7 @@ const Timeline = () => {
           <div className={`flex items-end`}>
             <div className={`w-[50%] text-right pr-[1.5rem]`}>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -342,12 +342,12 @@ const Timeline = () => {
 
             <div className={`w-[50%] pl-[.6rem]`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Announcement of the accepted teams and ideas
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 All teams whom ideas has been accepted into getlinked tech
                 hackathon 1.0 2023 are formally announced.
@@ -358,12 +358,12 @@ const Timeline = () => {
           <div className={`flex items-end`}>
             <div className={`w-[50%] text-right pr-[1.5rem]`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Getlinked Hackathon 1.0 Officially Begins
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 Accepted teams can now proceed to build their ground breaking
                 skill driven solutions.
@@ -380,7 +380,7 @@ const Timeline = () => {
 
             <div className={`w-[50%] pl-[.6rem]`}>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -390,7 +390,7 @@ const Timeline = () => {
           <div className={`flex items-end`}>
             <div className={`w-[50%] text-right pr-[1.5rem]`}>
               <p
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 November 18, 2023
               </p>
@@ -407,12 +407,12 @@ const Timeline = () => {
 
             <div className={`w-[50%] pl-[.6rem]`}>
               <h1
-                className={`text-[#D434FE] text-[16px] font-[600] leading-[24px] `}
+                className={`font-[Montserrat] font-[700] text-[12px] leading-[14.63px] text-[#D434FE] md:text-[24px] md:leading-[29.26px] `}
               >
                 Demo Day
               </h1>
               <p
-                className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}
+                className={`font-[Montserrat] font-[400] text-[12px] leading-[19.19px] text-[#fff] md:text-[14px] md:leading-[23.93px]`}
               >
                 Teams get the the opportunity to pitch their projects to judges.
                 The winner of the hackathon will also be announced on this day.

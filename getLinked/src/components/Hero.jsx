@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Stroke from "../assets/Vector 4.svg";
 import style from "./style.module.css";
 import Flare from "../assets/Purple-Lens-Flare-PNG (1).svg";
@@ -11,23 +11,25 @@ import Star from "../assets/star.svg";
 import Star2 from "../assets/star (1).svg";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className={`bg-[#150E28] pt-8 lg:px-[3rem] px-6 border-b border-[rgba(129,128,128,0.24)]`} id="Hero">
-      <div className={`${style._header_div} relative mb-6 mx-auto flex flex-col md:ml-auto md:mx-0`}>
+    <section className={`bg-[#150E28] pt-8 lg:px-[3rem]  border-b border-[rgba(129,128,128,0.24)]`} id="Hero">
+      <div className={`${style._header_div} relative mb-6 mx-auto flex flex-col md:p-4 md:ml-auto md:mx-0`}>
         <h1
-          className={`${style._hero_text} italic leading-[32px] text-[#fff] font-[600] text-center md:text-[16px]`}
+          className={`${style._hero_text} font-[Montserrat] italic leading-[19.5px] text-[#fff] font-[700] text-center md:text-[36px] md:leading-[43.88px]`}
         >
           Igniting a Revolution in HR Innovation
         </h1>
         <img
           src={Stroke}
           alt="stroke"
-          className={`block ml-auto relative w-[100px]`}
+          className={`${style._stroke} block ml-auto absolute right-0 bottom-[-8px] w-[115px] md:right-[20px] md:w-[280px] md:bottom-[-2px]`}
         />
       </div>
 
-      <div className={`${style._hero_div} mx-auto flex flex-col md:flex-row`}>
-        <div className={`relative md:w-[360px]`}>
+      <div className={`mx-auto flex flex-col md:flex-row items-end`}>
+        <div className={`${style._hero_div} mx-auto relative z-[40] md:pl-4 md:w-[100%] md:max-w-[410px] lg:max-w[560px] xl:w-[100%] xl:max-w-[580px]`}>
           <img
             src={Star}
             alt="star"
@@ -46,27 +48,31 @@ const Hero = () => {
           <img
             src={Flare}
             alt="flare"
-            className={`absolute left-[-80px] top-[-20px] md:top-[-80px] md:left-[40px]`}
+            className={`absolute left-[-80px] top-[-20px] md:top-[-80px] md:left-[40px] w-[100%]`}
           />
           <div
             className={`${style._hackathon} flex justify-center items-end text-center font-[600] leading-[42px] text-[#fff] relative mt-[3rem] mb-[.5rem] md:text-left`}
           >
-            <h1 className={`md:text-[36px] md:leading-[49px]`}>
-              getlinkedTech Hackathon
+            <h1 className={`font-face-cd font-[700] leading-[39.36px] text-[32px] text-center md:text-[50px] md:leading-[58.4px] md:text-left xl:text-[80px] xl:leading-[98.4px]`}>
+              getlinked Tech Hackathon&nbsp;
               <span className={`text-[#D434FE]`}>1.0</span>
             </h1>
-            <span className={`flex relative top-[-7px] right-[26px]`}>
-              <img src={Chain} alt="Chain" className={`w-[25px]`} />
-              <img src={Spark} alt="Spark" className={`w-[25px]`} />
+            <span className={`flex relative top-[-7px] right-[18px] md:right-[10px] md:hidden`}>
+              <img src={Chain} alt="Chain" className={`w-[25px] md:w-[100%] md:h-[100%]`} />
+              <img src={Spark} alt="Spark" className={`w-[25px] md:w-[100%] md:h-[100%]`} />
             </span>
+            <div className={`hidden md:flex absolute top-[70px] md:right-[-3px] xl:top-[130px] xl:right-[-24px]`}>
+              <img src={Chain} alt="Chain" className={`md:w-[35px]`} />
+              <img src={Spark} alt="Spark" className={`md:w-[35px]`} />
+            </div>
             <img
               src={Light}
               alt="light bulb"
-              className={`absolute top-[-28px] right-[62px] w-[30px]`}
+              className={`absolute top-[-28px] right-[52px] w-[30px] md:right-[68px] xl:top-[-12px]`}
             />
           </div>
           <div
-            className={`text-[13px] font-[400] w-[240px] mx-auto leading-[28px] text-[#fff] text-center md:text-left md:text-[15px] md:w-full md:mx-0`}
+            className={`relative z-[40] font-[Montserrat] text-[13px] font-[400] mx-auto leading-[21.58px] text-[#fff] text-center md:text-left md:text-[20px] md:leading-[32.2px] md:w-full md:mx-0`}
           >
             <p>
               Participate in getlinked tech Hackathon 2023 stand a chance to win
@@ -75,38 +81,37 @@ const Hero = () => {
           </div>
           <div className={`flex justify-center mt-4`}>
             <button
-              className={`${style._btn_style} w-[172px] h-[53px] rounded-[4px]  text-[#fff] font-[400] text-[16px] my-4 mx-auto md:mx-0 md:mr-auto`}
-            >
-              <Link to="/register">Register</Link>
+              className={`${style._btn_style} ${style._btn_style_hover} w-[152px] h-[46.84px] rounded-[4px] text-[#fff] font-[400] text-[14px] leading-[17.07px] font-[Montserrat] my-4 mx-auto md:mx-0 md:mr-auto`} onClick={() => navigate("/register")}
+            >Register
             </button>
           </div>
           <div className={`flex gap-4 items-center my-4 justify-center md:justify-start md:mt-8`}>
             <p
-              className={`text-[48px] text-[#fff] font-[400] leading-[32px] space-[16px]`}
+              className={`text-[48px] font-face-uo text-[#fff] font-[400] leading-[63.84px]`}
             >
               00
               <span
-                className={`uppercase text-[14px] text-[#fff] font-[400] leading-[20px]`}
+                className={`uppercase font-[Montserrat] text-[14px] text-[#fff] font-[400] leading-[18.62px]`}
               >
                 H
               </span>
             </p>
             <p
-              className={`text-[48px] text-[#fff] font-[400] leading-[32px] space-[16px]`}
+              className={`text-[48px] font-face-uo text-[#fff] font-[400] leading-[63.84px]`}
             >
               00
               <span
-                className={`uppercase text-[14px] text-[#fff] font-[400] leading-[20px]`}
+                className={`uppercase font-[Montserrat] text-[14px] text-[#fff] font-[400] leading-[18.62px]`}
               >
                 M
               </span>
             </p>
             <p
-              className={`text-[48px] text-[#fff] font-[400] leading-[32px] space-[16px]`}
+              className={`text-[48px] font-face-uo text-[#fff] font-[400] leading-[63.84px]`}
             >
               00
               <span
-                className={`uppercase text-[14px] text-[#fff] font-[400] leading-[20px]`}
+                className={`uppercase font-[Montserrat] text-[14px] text-[#fff] font-[400] leading-[18.62px]`}
               >
                 S
               </span>
@@ -114,9 +119,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className={`${style._smart_glass} relative mt-[1.5rem] md:w-[542px] md:right-[-23px]`}>
-          <img src={SmartGlass} alt="Smart Glass" className={``} />
-          <img src={Screen} alt="Screen" className={`absolute top-[-10px] md:right-[30px]`} />
+        <div className={`relative mt-[1.5rem] md:w-[50%] lg:w-[65%]`}>
+          <img src={SmartGlass} alt="Smart Glass" className={`relative `} />
+          <img src={Screen} alt="Screen" className={`absolute top-[-30px] md:right-[30px]`} />
         </div>
       </div>
     </section>

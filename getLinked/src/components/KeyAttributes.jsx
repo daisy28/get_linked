@@ -70,7 +70,7 @@ const KeyAttributes = () => {
             className={`absolute right-[-23px] bottom-[-100px] w-[50%] md:bottom-[-280px] md:right-[-22px] lg:right-[-47px]`}
           />
           <h1
-            className={`text-[24px] font-[600] lading-[32px] text-[#fff] mb-4`}
+            className={`font-face-cd  text-[20px] font-[700] leading-[26.6px] text-[#fff] mb-4 md:text-[32px] md:leading-[42.56px]`}
           >
             Judging Criteria{" "}
             <span className={`text-[#D434FE]`}>Key attributes</span>
@@ -80,9 +80,9 @@ const KeyAttributes = () => {
               return (
                 <p
                   key={item.title}
-                  className={`text-[16px] font-[400] text-[#fff] leading-[30px] mb-4`}
+                  className={`font-[Montserrat] text-[12px] font-[400] text-[#fff] leading-[20.82px] mb-4  md:text-[16px] md:leading-[27.76px]`}
                 >
-                  <span className={`text-[#FF26B9] font-[600]`}>
+                  <span className={`text-[#FF26B9] font-[700] text-[13px] leading-[22.55px] md:text-[14px] md:leading-[24.29px]`}>
                     {item.title}
                   </span>
                   &nbsp;{item.desc}
@@ -90,7 +90,7 @@ const KeyAttributes = () => {
               );
             })}
             <button
-              className={`${style._btn_style} w-[150px] h-[53px] rounded-[4px] text-[#fff] font-[400] text-[16px] my-4`}
+              className={`${style._btn_style} ${style._btn_style_hover} w-[96.35px] h-[31.35px] md:w-[172px] md:h-[53px] rounded-[4px] text-[#fff] text-[12px] leading-[14.63px] font-[400] md:text-[16px] md:leading-[19.5px] my-4`}
             >
               <Link to="/">Read More</Link>
             </button>

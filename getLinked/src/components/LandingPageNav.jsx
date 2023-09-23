@@ -1,6 +1,6 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Toggle from "../assets/Vector (1).svg";
 import { MdClose } from "react-icons/md";
 import style from "./style.module.css";
@@ -11,11 +11,12 @@ const LandingPageNav = () => {
   const [toggle, setToggle] = useState(false);
   const location = useLocation();
   const splitLocation = location.pathname;
+  const navigate = useNavigate();
 
   return (
-    <nav className={`pt-6 pb-2 px-6 bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}>
+    <nav className={`p-6 pt-8 bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}>
       <div
-          className={`fixed h-[100vh] overflow-y-hidden bottom-0 bg-[#140d27dc] blur-md z-[60] top-[0px] left-0 right-[0] delay-300 transition ease-in duration-1000  ${
+          className={`fixed h-[100vh] md:hidden overflow-y-hidden bottom-0 bg-[#140d27dc] blur-md z-[60] top-[0px] left-0 right-[0] delay-300 transition ease-in duration-1000  ${
             toggle ? `block` : `hidden`
           }`} onClick={() => setToggle(prevState => !prevState)}
         >
@@ -23,7 +24,7 @@ const LandingPageNav = () => {
       <div className={`flex justify-between items-center`}>
         <Link
           to="/"
-          className={`font-face-cd text-[#fff] font-[600] leading-[32px] text-[1.2rem] `}
+          className={`relative z-[40] font-face-cd text-[#fff] font-[700] leading-[18.45px] text-[15px] `}
         >
           get<span className={`text-[#D434FE]`}>linked</span>
         </Link>
@@ -36,11 +37,11 @@ const LandingPageNav = () => {
         </div>
 
         
-        <div className={`relative  ${toggle? `block` : `hidden`}`}>
+        <div className={`relative  ${toggle ? `md:hidden block` : `hidden`}`}>
           <div
-              className={`bg-[#140D27] w-[270px] z-[90] absolute right-[-24px] top-[-38px] ml-auto p-6 px-8 flex flex-col rounded-[8px] shadow-lg gap-8`}
+              className={`bg-[#140D27] max-w-[348px] h-[432px] z-[90] absolute right-[-24px] top-[-38px] ml-auto p-6 px-8 flex flex-col rounded-[8px] shadow-2xl gap-12`}
             >
-              <div className={`relative`}>
+              <div className={`relative mt-4`}>
                 <img src={Circle} alt="" className={`relative ml-auto`} />
                 <MdClose
                   className={`absolute top-[3px] right-[3px] cursor-pointer text-[#fff]`}
@@ -49,36 +50,34 @@ const LandingPageNav = () => {
                 
               </div>
               <div
-                className={`flex flex-col gap-4 text-[#fff] text-[1.1rem] font-[400] leading-[24px] `}
+                className={`flex flex-col font-face-in gap-6 text-[#fff] text-[18px] font-[500] leading-[21.78px] spacing-[-1]`}
             >
-                <AnchorLink href="#Timeline">Timeline</AnchorLink>
-                <AnchorLink href="#Intro">Intro</AnchorLink>
-                <AnchorLink href="#Faqs">FAQs</AnchorLink>
-                <Link to="/contact" className={`${splitLocation === "/contact" ? `text-[#d434fe]` : `text-[#fff]`}`}>Contact</Link>
+                <AnchorLink href="#Timeline" className={`${style._text_style_hover}`}>Timeline</AnchorLink>
+                <AnchorLink href="#Intro" className={`${style._text_style_hover}`}>Intro</AnchorLink>
+                <AnchorLink href="#Faqs" className={`${style._text_style_hover}`}>FAQs</AnchorLink>
+                <Link to="/contact" className={`${style._text_style_hover} ${splitLocation === "/contact" ? `${style._text_style}` : `text-[#fff]`}`}>Contact</Link>
                 <button
-                  className={`${style._btn_style} w-[172px] h-[53px] rounded-[4px] text-[#fff] font-[400] text-[16px] my-4`}
-                >
-                  <Link to="/register">Register</Link>
+                  className={`${style._btn_style} w-[172px] h-[53px] text-[#fff] font-[400] font-[Montserrat] text-[16px] leading-[19.5px] my-4 ${style._btn_style_hover}`} onClick={() => navigate("/register")}
+                >Register
                 </button>
               </div>
             </div>
         </div>
         
-        <div className={`hidden md:block`}>
+        <div className={`hidden md:block relative z-[40]`}>
           <div
                 className={`flex items-center gap-4 text-[#fff] text-[1.1rem] font-[400] leading-[24px]`}
               >
-            <div className={`mr-8 flex items-center gap-6`}>
-              <AnchorLink href="#Timeline">Timeline</AnchorLink>
-              <AnchorLink href="#Intro">Intro</AnchorLink>
-              <AnchorLink href="#Faqs">FAQs</AnchorLink>
-              <Link to="/contact" className={`${splitLocation === "/contact" ? `text-[#d434fe]` : `text-[#fff]`}`}>Contact</Link>
+            <div className={`mr-8 flex items-center gap-6 font-face-in text-[#fff] text-[18px] font-[500] leading-[21.78px] spacing-[-1]`}>
+              <AnchorLink href="#Timeline" className={`${style._text_style_hover}`}>Timeline</AnchorLink>
+              <AnchorLink href="#Intro" className={`${style._text_style_hover}`} >Intro</AnchorLink>
+              <AnchorLink href="#Faqs" className={`${style._text_style_hover}`}>FAQs</AnchorLink>
+              <Link to="/contact" className={`${style._text_style_hover} ${splitLocation === "/contact" ? `${style._text_style}` : `text-[#fff]`}`}>Contact</Link>
             </div>
                 
             <button
-              className={`${style._btn_style} w-[150px] h-[53px] rounded-[4px]  text-[#fff] font-[400] text-[16px] my-4`}
-            >
-              <Link to="/register">Register</Link>
+              className={`${style._btn_style} font-[Montserrat] rounded-[4px] w-[172px] h-[53px] leading-[19.5px]  text-[#fff] font-[400] text-[16px] my-4 ${style._btn_style_hover}`} onClick={() => navigate("/register")}
+            >Register
             </button>
           </div>
         </div>

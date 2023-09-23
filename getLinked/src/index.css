@@ -13,6 +13,26 @@ body {
   url("./fonts/Fonts/OTF/ClashDisplay-Regular.otf");
 }
 
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url("./fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Unica One";
+  src: local("Unica One"),
+  url("./fonts/UnicaOne-Regular.ttf");
+}
+
 .font-face-cd {
   font-family: "ClashDisplay";
+}
+
+.font-face-in {
+  font-family: "ClashDisplay";
+}
+
+.font-face-uo {
+  font-family: "Unica One";
 }

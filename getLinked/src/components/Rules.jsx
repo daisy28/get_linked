@@ -17,7 +17,7 @@ const Rules = () => {
           <img
             src={Flare}
             alt="star"
-            className={`absolute z-[-10] right-[70px] top-[-90px] w-full md:top-[20px] md:right-[60px] md:hidden`}
+            className={`absolute z-[10] right-[70px] top-[-90px] w-full md:top-[20px] md:right-[60px] md:hidden`}
           />
           <img
             src={Flare2}
@@ -52,11 +52,11 @@ const Rules = () => {
             className={`absolute right-[70px] top-[60px] w-full md:top-[-100px] md:right-[20px] hidden md:block`}
           />
           <h1
-            className={`relative text-[24px] font-[600] leading-[32px] text-[#fff] mb-4 z-[40]`}
+            className={`font-face-cd relative text-[20px] font-[700] leading-[26.6px] text-[#fff] mb-4 z-[40] md:text-[32px] md:leading-[42.56px]`}
           >
             Rules and <span className={`text-[#D434FE]`}>Guidlines</span>
           </h1>
-          <p className={`relative text-[13px] font-[400] text-[#fff] leading-[30px] z-[40]`}>
+          <p className={`font-[Montserrat] relative text-[13px] font-[400] text-[#fff] leading-[27.5px] z-[40] md:text-[14px] md:leading-[27.5px]`}>
             Our tech hackathon is a melting point pot of visionaries, and its
             purpose is as clear as day; to shape the future. Whether you&apos;re
             a coding genuis, a design maverick, or a concept wizard, you&apos;ll

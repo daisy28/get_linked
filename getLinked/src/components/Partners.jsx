@@ -40,11 +40,11 @@ const Partners = () => {
           className={`relative z-[40] text-center md:w-[50%] mx-auto mb-8`}
         >
           <h1
-            className={`text-[24px] font-[600] leading-[32px] text-[#fff] mb-4`}
+            className={`font-face-cd text-[20px] font-[700] leading-[27.5px] text-[#fff] mb-4 md:text-[32px] md:leading-[27.5px]`}
           >
             Partners and Sponsors
           </h1>
-          <p className={`text-[13px] font-[400] text-[#fff] leading-[30px]`}>
+          <p className={`font-[Montserrat] text-[12px] font-[400] text-[#fff] leading-[20.5px] md:text-[14px] md:leading-[27.5px]`}>
             {" "}
             Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors.
           </p>
