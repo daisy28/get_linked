@@ -9,11 +9,21 @@ import Location from "../assets/Vector (2).svg";
 import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star.svg";
 import Star3 from "../assets/star (1).svg";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Footer = () => {
+     const ref = useRef(null);
+     const inView = useInView(ref, { once: true });
+     
      return (
           <section
-      className={`p-8 bg-[#100B20] lg:px-[3rem]`}>
+               className={`p-8 bg-[#100B20] lg:px-[3rem]`}
+          ref={ref}
+    style={{
+        transform: inView ? `none` : `translateY(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
                <div className={`md:flex justify-between items-start gap-8 relative`}>
                     <img
             src={Star}

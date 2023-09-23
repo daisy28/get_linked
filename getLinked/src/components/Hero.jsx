@@ -9,12 +9,23 @@ import SmartGlass from "../assets/man-wearing-smart-glasses-touching-virtual-scr
 import Screen from "../assets/Image 1.svg";
 import Star from "../assets/star.svg";
 import Star2 from "../assets/star (1).svg";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Hero = () => {
   const navigate = useNavigate();
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
 
   return (
-    <section className={`bg-[#150E28] pt-8 lg:px-[3rem]  border-b border-[rgba(129,128,128,0.24)]`} id="Hero">
+    <section className={`bg-[#150E28] pt-8 lg:px-[3rem]  border-b border-[rgba(129,128,128,0.24)]`} id="Hero"
+    ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+    >
+      
       <div className={`${style._header_div} relative mb-6 mx-auto flex flex-col md:p-4 md:ml-auto md:mx-0`}>
         <h1
           className={`${style._hero_text} font-[Montserrat] italic leading-[19.5px] text-[#fff] font-[700] text-center md:text-[36px] md:leading-[43.88px]`}

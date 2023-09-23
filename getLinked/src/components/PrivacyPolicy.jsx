@@ -6,12 +6,28 @@ import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star.svg";
 import Star3 from "../assets/star (1).svg";
 import Flare from "../assets/Purple-Lens-Flare-PNG (1).svg";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 const PrivacyPolicy = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+
   return (
-    <section className={`p-6 py-[4rem] bg-[#140D27] lg:px-[3rem]`} id="Privacy">
+    <section className={`p-6 py-[4rem] bg-[#140D27] lg:px-[3rem]`} id="Privacy"
+      ref={ref}
+    style={{
+        transform: inView ? `none` : `translateY(-80px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
+    >
       <div className={`md:flex justify-center gap-6 items-start lg:gap-10`}>
-        <div className={`md:w-[50%] relative z-[40]`}>
+        <div className={`md:w-[50%] relative z-[40]`}
+        ref={ref}
+    style={{
+        transform: inView ? `none` : `translateX(-40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
             src={Star}
             alt="Stars"
@@ -104,7 +120,12 @@ const PrivacyPolicy = () => {
             </div>
           </div>
         </div>
-        <div className={`relative md:w-[50%] z-[40]`}>
+        <div className={`relative md:w-[50%] z-[40]`}
+        ref={ref}
+    style={{
+        transform: inView ? `none` : `translateX(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
             src={Star}
             alt="Stars"

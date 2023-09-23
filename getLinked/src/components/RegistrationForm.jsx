@@ -10,6 +10,7 @@ import Flare from "../assets/Purple-Lens-Flare-PNG (1).svg";
 import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star (1).svg";
 import Star3 from "../assets/star.svg";
+import { useInView } from "framer-motion";
 
 
 const Register = () => {
@@ -24,6 +25,8 @@ const Register = () => {
   const error = (message) => toast.error(message);
   const success = (message) => toast.success(message);
   const formRef = useRef(null);
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -68,7 +71,7 @@ const Register = () => {
   useEffect(() => {
     axios
       .get(`https://backend.getlinked.ai/hackathon/categories-list`).then((res) => {
-           setCategory( res.data);
+           setCategory(res.data);
       }).catch((err) => {
         console.log(err);
      //    error(err.message);
@@ -77,7 +80,7 @@ const Register = () => {
 
   return (
     <section className={`relative py-[4rem] px-6 bg-[#140D27] lg:p-[6rem] md:flex items-center`}>
-      {/* <div className={`absolute top-0 right-0 left-0 bottom-0 bg-[#140D27] h-[100vh] z-[-10]`}></div> */}
+      <div className={`absolute top-0 right-0 left-0 bottom-0 bg-[#140D27] h-[100vh] z-[-10]`}></div>
       {registered ? <Modal /> : null}
       <div className={`relative md:flex justify-between items-start mb-[4rem]`}>
         <img
@@ -113,6 +116,11 @@ const Register = () => {
         </div>
         <div
           className={`md:px-[2rem] md:pt-[3rem] rounded-[8px] md:bg-[rgba(255,255,255,0.03)] mx-auto`}
+          ref={ref}
+      style={{
+        transform: inView ? `none` : `translatex(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
         >
           <h1
             className={`hidden md:block font-face-cd text-[#D434FE] leading-[39.36px] font-[600] text-[32px] mb-4 relative z-[0]`}
@@ -193,7 +201,7 @@ const Register = () => {
                     htmlFor="Project projectTopic"
                     className={`mb-4 font-[Montserrat]  text-[13px] md:text-[14px] md:leading-[17.07px] leading-[15.85px] text-[#fff] font-[400]`}
                   >
-                    Project projectTopic
+                    Project Topic
                   </label>
                   <input
                     type="text"

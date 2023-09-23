@@ -14,6 +14,7 @@ import Flare2 from "../assets/Purple-Lens-Flare-PNG.svg";
 import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star (1).svg";
 import Star3 from "../assets/star.svg";
+import { useInView } from "framer-motion";
 
 const ContactForm = () => {
   const [email, setEmail] = useState("");
@@ -25,7 +26,9 @@ const ContactForm = () => {
   const error = (message) => toast.error(message);
   const success = (message) => toast.success(message);
   const formRef = useRef(null);
-  console.log(teamName, topic)
+  console.log(teamName, topic);
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -92,7 +95,12 @@ const ContactForm = () => {
             alt="Star"
             className={`w-[20%] absolute left-[-18px] top-[2px]  animate-ping delay-300 duration-100 ease-in md:top-[-80px] md:left-[90px]`}
           />
-        <div className={`hidden md:block relative mt-[2rem] md:w-[40%]`}>
+        <div className={`hidden md:block relative mt-[2rem] md:w-[40%]`}
+        ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <div className={`w-[250px] ml-auto relative z-[40]`}>
             <h1
               className={`font-face-cd text-[32px] font-[600] leading-[39.36px] text-[#D434FE] mb-6`}
@@ -145,6 +153,11 @@ const ContactForm = () => {
 
         <div
           className={`relative z-[40] md:w-[60%] md:px-[3rem] md:pt-[3rem] rounded-[12px] md:bg-[rgba(255,255,255,0.03)] md:max-w[617px]`}
+          ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(-40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
         >
           <img
             src={Flare2}

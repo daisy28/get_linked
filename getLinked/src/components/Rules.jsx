@@ -3,12 +3,22 @@ import Star2 from "../assets/star.svg";
 import Flare from "../assets/Purple-Lens-Flare-PNG (1).svg";
 import Flare2 from "../assets/Purple-Lens-Flare-PNG.svg";
 import Img1 from "../assets/7450159 1.svg";
-import ImgMobile from "../assets/Image3.svg"
+import ImgMobile from "../assets/Image3.svg";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Rules = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+
   return (
     <section
       className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}
+      ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
     >
       <div className={`md:flex justify-center gap-6 items-center xl:gap-0`}>
         <div className={`relative md:w-[50%] md:order-4`}>

@@ -4,6 +4,8 @@ import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star (1).svg";
 import Star3 from "../assets/star.svg";
 import ImgMobile from "../assets/Image1.svg";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Faqs = () => {
   const [show, setShow] = useState(false);
@@ -12,12 +14,20 @@ const Faqs = () => {
   const [showThree, setShowThree] = useState(false);
   const [showFour, setShowFour] = useState(false);
   const [showFive, setShowFive] = useState(false);
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
   return (
     <section
       className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`} id="Faqs"
+      
     >
       <div className={`md:flex justify-center items-center xl:gap-0`}>
-        <div className={`relative text-center md:text-left md:w-[50%]`}>
+        <div className={`relative text-center md:text-left md:w-[50%]`}
+        ref={ref}
+    style={{
+        transform: inView ? `none` : `translateY(-40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
             src={Star}
             alt="Star"
@@ -135,6 +145,11 @@ const Faqs = () => {
         </div>
         <div
           className={`relative my-8 mt-[6rem] md:my-0 md:mt-[4rem] md:w-[50%]`}
+          ref={ref}
+    style={{
+        transform: inView ? `none` : `translateY(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
         >
           <img src={ImgMobile} alt="Illustration" className={``} />
           <img

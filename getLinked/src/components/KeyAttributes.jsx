@@ -7,6 +7,8 @@ import Star3 from "../assets/star.svg";
 import Flare2 from "../assets/Purple-Lens-Flare-PNG.svg";
 import style from "./style.module.css";
 import ImgMobile from "../assets/Image2.svg";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 const KeyAttributes = () => {
   const data = [
@@ -31,9 +33,17 @@ const KeyAttributes = () => {
       desc: `Judges will ensure that the team adhered to the rules and guidelines of the hackathon, including deadlines, use of specific technologies or APIs, and any other competition-specific requirements.`,
     },
   ];
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+
   return (
     <section
       className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}
+      ref={ref}
+      style={{
+        transform: inView ? `none` : `translateX(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
     >
       <div className={`md:flex justify-center items-center xl:gap-0`}>
         <div className={`relative md:w-[60%]`}>

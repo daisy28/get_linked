@@ -2,11 +2,21 @@ import style from "./style.module.css";
 import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star (1).svg";
 import Star3 from "../assets/star.svg";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Timeline = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+
   return (
     <section
       className={`p-6 py-[4rem] bg-[#140D27] border-0 lg:px-[3rem]`} id="Timeline"
+      ref={ref}
+      style={{
+        transform: inView ? `none` : `translateX(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
     >
       <div className={``}>
         <div className={`text-center mb-10`}>
