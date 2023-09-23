@@ -164,6 +164,11 @@ const ContactForm = () => {
             alt="Flare"
             className={`w-[50%] h-[50%] z-[10] absolute hidden md:block md:bottom-[-100px] md:right-[-22px]`}
           />
+          <img
+            src={Flare}
+            alt="Flare"
+            className={`w-[50%] h-[50%] z-[10] absolute hidden md:block md:bottom-[-100px] md:right-[-22px]`}
+          />
           <div className={`relative mb-6 md:hidden`}>
             <Link to="/">
               <img src={Circle} alt="" className={`relative `} />

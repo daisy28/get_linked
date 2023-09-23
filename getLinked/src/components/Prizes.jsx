@@ -18,15 +18,16 @@ const Prizes = () => {
   return (
     <section
       className={`p-6 py-[4rem] bg-[#100B20] border-0 lg:px-[3rem] pb-[8rem]`}
-      ref={ref}
-    style={{
-        transform: inView ? `none` : `translateY(40px)`,
-        opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+      
     >
       <div className={`flex flex-col gap-6 lg:gap-0`}>
         <div
           className={`relative text-center md:text-left md:w-[50%] lg:w-[45%] md:ml-auto`}
+          ref={ref}
+    style={{
+        transform: inView ? `none` : `translateY(-40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
         >
           <h1
             className={`font-face-cd text-[20px] font-[700] leading-[24.6px] text-[#fff] mb-4 md:text-[32px] md:leading-[39.36px]`}
@@ -38,7 +39,12 @@ const Prizes = () => {
             Highlight of the prizes or rewards for winners and for participants.
           </p>
         </div>
-        <div className={`md:flex items-end relative`}>
+        <div className={`md:flex items-end relative`}
+        ref={ref}
+    style={{
+        transform: inView ? `none` : `translateY(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
             src={Flare}
             alt="Flare"

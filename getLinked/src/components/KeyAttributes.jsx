@@ -39,14 +39,14 @@ const KeyAttributes = () => {
   return (
     <section
       className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`}
-      ref={ref}
-      style={{
-        transform: inView ? `none` : `translateX(40px)`,
-        opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
     >
       <div className={`md:flex justify-center items-center xl:gap-0`}>
-        <div className={`relative md:w-[60%]`}>
+        <div className={`relative md:w-[60%]`}
+          ref={ref}
+      style={{
+        transform: inView ? `none` : `translateX(-40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
             src={Illustration}
             alt="Illustration"
@@ -73,7 +73,12 @@ const KeyAttributes = () => {
             className={`absolute left-[170px] bottom-[112px] w-[10px] animate-ping delay-300 duration-100 ease-in md:bottom-[135px] md:left-[200px] lg:bottom-[180px] lg:left-[250px] xl:bottom-[250px] xl:left-[350px]`}
           />
         </div>
-        <div className={`relative text-center md:text-left md:w-[50%]`}>
+        <div className={`relative text-center md:text-left md:w-[50%]`}
+        ref={ref}
+      style={{
+        transform: inView ? `none` : `translateX(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
             src={Flare2}
             alt="flare"

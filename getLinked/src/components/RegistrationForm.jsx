@@ -21,9 +21,9 @@ const Register = () => {
   const [projectTopic, setProjectTopic] = useState("");
   const [category, setCategory] = useState("");
   const [privacyPolicy, setPrivacyPolicy] = useState(false);
-  const [registered, setRegistered] = useState(false);
   const error = (message) => toast.error(message);
   const success = (message) => toast.success(message);
+  const [registered, setRegistered] = useState(false);
   const formRef = useRef(null);
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
@@ -81,7 +81,7 @@ const Register = () => {
   return (
     <section className={`relative py-[4rem] px-6 bg-[#140D27] lg:p-[6rem] md:flex items-center`}>
       <div className={`absolute top-0 right-0 left-0 bottom-0 bg-[#140D27] h-[100vh] z-[-10]`}></div>
-      {registered ? <Modal /> : null}
+      {registered ? <Modal registered={registered} /> : null}
       <div className={`relative md:flex justify-between items-start mb-[4rem]`}>
         <img
             src={Star}
@@ -214,7 +214,7 @@ const Register = () => {
                 </div>
               </div>
 
-              <div className={`flex gap-4 items-start mb-6`}>
+              <div className={`flex gap-3 items-start mb-6`}>
                 <div className={`md:w-[50%]`}>
                   <label
                     htmlFor="Category"
@@ -225,7 +225,7 @@ const Register = () => {
                   <select
                     name=""
                     id="Category"
-                    className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-full outline-none mt-2`}
+                    className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-[100%] outline-none mt-2`}
                     required
                     onChange={(e) => setCategory(e.target.value)}
                     ref={formRef}
@@ -262,17 +262,17 @@ const Register = () => {
                   </select>
                 </div>
 
-                <div className={`w-[60%] md:w-[50%]`}>
+                <div className={`w-[45%] md:w-[50%]`}>
                   <label
                     htmlFor="Category"
-                    className={`text-[14px] text-[#fff] font-[400] block`}
+                    className={`mb-4 font-[Montserrat]  text-[13px] md:text-[14px] md:leading-[17.07px] leading-[15.85px] text-[#fff] font-[400]`}
                   >
                     Group Size
                   </label>
                   <select
                     name=""
                     id="Group Size"
-                    className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-[100%] outline-none mt-2`}
+                    className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-[100%] outline-none mt-2 ml-auto`}
                     required
                     onChange={(e) => setGroupSize(e.target.value)}
                     ref={formRef}
@@ -324,21 +324,22 @@ const Register = () => {
               >
                 Please review your registration before submitting
               </p>
-              <div className={`flex gap-4 items-start`}>
-                <input
+              <div className={`relative flex gap-4 items-start`}>
+                <label
+                  htmlFor="agreement"
+                  className={`${style._checkbox_style} font-[Montserrat] text-[#fff] text-[12px] font-[400] leading-[14.63px] flex gap-6`}
+                >
+                  <input
                   type="checkbox"
                   name="agreement"
                   id="agreement"
-                  className={`bg-transparent border border-[#fff]`}
+                  className={``}
                   onChange={(e) => setPrivacyPolicy(e.target.value)}
                   ref={formRef}
                 />
-                <label
-                  htmlFor="agreement"
-                  className={`font-[Montserrat] text-[#fff] text-[12px] font-[400] leading-[14.63px]`}
-                >
                   I agreed with the event terms and conditions and privacy
                   policy
+                <span className={`${style._checkmark_style}`}></span>
                 </label>
               </div>
               <div className={`flex justify-center items-center`}>

@@ -12,14 +12,14 @@ const Timeline = () => {
   return (
     <section
       className={`p-6 py-[4rem] bg-[#140D27] border-0 lg:px-[3rem]`} id="Timeline"
-      ref={ref}
+    >
+      <div className={``}>
+        <div className={`text-center mb-10`}
+        ref={ref}
       style={{
         transform: inView ? `none` : `translateX(40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
-    >
-      <div className={``}>
-        <div className={`text-center mb-10`}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <h1
             className={`font-face-cd marker: md:text-[32px] md:leading-[42.56px] text-[20px] font-[700] leading-[26.6px] text-[#fff] mb-3`}
           >

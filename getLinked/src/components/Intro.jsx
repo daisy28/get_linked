@@ -11,7 +11,6 @@ const Intro = () => {
   return (
     <section
       className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`} id="Intro"
-      
     >
       <div className={`md:flex justify-center gap-6 items-center xl:gap-0`}>
         <div className={`mb-[4rem] md:mb-0 relative md:w-[50%]`}

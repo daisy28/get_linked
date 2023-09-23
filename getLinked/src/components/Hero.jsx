@@ -19,14 +19,14 @@ const Hero = () => {
 
   return (
     <section className={`bg-[#150E28] pt-8 lg:px-[3rem]  border-b border-[rgba(129,128,128,0.24)]`} id="Hero"
-    ref={ref}
-      style={{
-        transform: inView ? `none` : `translateY(40px)`,
-        opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
     >
       
-      <div className={`${style._header_div} relative mb-6 mx-auto flex flex-col md:p-4 md:ml-auto md:mx-0`}>
+      <div className={`${style._header_div} relative mb-6 mx-auto flex flex-col md:p-4 md:ml-auto md:mx-0`}
+      ref={ref}
+      style={{
+        transform: inView ? `none` : `translateX(-40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
         <h1
           className={`${style._hero_text} font-[Montserrat] italic leading-[19.5px] text-[#fff] font-[700] text-center md:text-[36px] md:leading-[43.88px]`}
         >
@@ -40,7 +40,12 @@ const Hero = () => {
       </div>
 
       <div className={`mx-auto flex flex-col md:flex-row items-end`}>
-        <div className={`${style._hero_div} mx-auto relative z-[40] md:pl-4 md:w-[100%] md:max-w-[410px] lg:max-w[560px] xl:w-[100%] xl:max-w-[580px]`}>
+        <div className={`${style._hero_div} mx-auto relative z-[40] md:pl-4 md:w-[100%] md:max-w-[410px] lg:max-w[560px] xl:w-[100%] xl:max-w-[580px]`}
+        ref={ref}
+      style={{
+        transform: inView ? `none` : `translateX(40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
             src={Star}
             alt="star"
@@ -130,7 +135,12 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className={`relative mt-[1.5rem] md:w-[50%] lg:w-[65%]`}>
+        <div className={`relative mt-[1.5rem] md:w-[50%] lg:w-[65%]`}
+        ref={ref}
+      style={{
+        transform: inView ? `none` : `translateX(-40px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img src={SmartGlass} alt="Smart Glass" className={`relative `} />
           <img src={Screen} alt="Screen" className={`absolute top-[-30px] md:right-[30px]`} />
         </div>

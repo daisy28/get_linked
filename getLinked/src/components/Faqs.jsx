@@ -19,7 +19,6 @@ const Faqs = () => {
   return (
     <section
       className={`p-6 py-[4rem] bg-[#140D27] border-b border-[rgba(129,128,128,0.24)] lg:px-[3rem]`} id="Faqs"
-      
     >
       <div className={`md:flex justify-center items-center xl:gap-0`}>
         <div className={`relative text-center md:text-left md:w-[50%]`}

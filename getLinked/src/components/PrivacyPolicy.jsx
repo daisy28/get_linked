@@ -15,11 +15,7 @@ const PrivacyPolicy = () => {
 
   return (
     <section className={`p-6 py-[4rem] bg-[#140D27] lg:px-[3rem]`} id="Privacy"
-      ref={ref}
-    style={{
-        transform: inView ? `none` : `translateY(-80px)`,
-        opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
+      
     >
       <div className={`md:flex justify-center gap-6 items-start lg:gap-10`}>
         <div className={`md:w-[50%] relative z-[40]`}
