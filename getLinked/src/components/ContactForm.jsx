@@ -95,22 +95,22 @@ const ContactForm = () => {
         <div className={`hidden md:block relative mt-[2rem] md:w-[40%]`}>
           <div className={`w-[250px] ml-auto relative z-[40]`}>
             <h1
-              className={`text-[24px] font-[700] leading-[36px] text-[#D434FE] mb-6`}
+              className={`font-face-cd text-[32px] font-[600] leading-[39.36px] text-[#D434FE] mb-6`}
             >
               Get in touch
             </h1>
             <p
-              className={`text-[15px] font-[400] text-[#fff] leading-[30px] mb-4`}
+              className={`font-[Montserrat] text-[16px] leading-[19.5px]text-[16px] font-[400] text-[#fff] leading-[19.5px] mb-4`}
             >
               Contact Information
             </p>
             <p
-              className={`text-[15px] font-[400] text-[#fff] leading-[30px] mb-4`}
+              className={`font-[Montserrat] text-[15px] font-[400] text-[#fff] leading-[19.5px] mb-4`}
             >
               27, Alara Street Yaba 100012 Lagos State
             </p>
             <p
-              className={`text-[15px] font-[400] text-[#fff] leading-[30px] mb-4`}
+              className={`font-[Montserrat] text-[15px] font-[400] text-[#fff] leading-[19.5px] mb-4`}
             >
               Call Us: 07067981819
             </p>
@@ -121,7 +121,7 @@ const ContactForm = () => {
             </p>
             <div className={`mt-6 text-left`}>
               <h1
-                className={`text-[18px] text-[#D434FE] font-[500] leading-[32px] mb-4`}
+                className={`font-[Montserrat] text-[16px] text-[#D434FE] font-[400] leading-[19.5px] mb-4`}
               >
                 Share on
               </h1>
@@ -144,7 +144,7 @@ const ContactForm = () => {
         </div>
 
         <div
-          className={`relative z-[40] md:w-[60%] md:px-[3rem] md:pt-[3rem] rounded-[12px] md:bg-[rgba(255,255,255,0.03)]`}
+          className={`relative z-[40] md:w-[60%] md:px-[3rem] md:pt-[3rem] rounded-[12px] md:bg-[rgba(255,255,255,0.03)] md:max-w[617px]`}
         >
           <img
             src={Flare2}
@@ -161,12 +161,12 @@ const ContactForm = () => {
           </div>
           <div className={`relative z-[40]`}>
             <h1
-              className={`text-[24px] font-[700] leading-[36px] text-[#D434FE] mb-6`}
+              className={`font-face-cd text-[20px] font-[700] leading-[24.6px] text-[#D434FE] mb-6`}
             >
               Questions or need assistance? Let us Know about it!
             </h1>
             <p
-              className={`text-[15px] font-[400] text-[#fff] leading-[30px] md:hidden`}
+              className={` font-[Montserrat] text-[12px] font-[400] text-[#fff] leading-[14.63px] md:hidden`}
             >
               Email us below to any question related to our event.
             </p>
@@ -177,14 +177,14 @@ const ContactForm = () => {
               <input
                 type="text"
                 placeholder="First Name"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-full outline-none mb-6`}
+                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
                 onChange={(e) => setFirstName(e.target.value)}
                 ref={formRef}
               />
               <input
                 type="text"
                 placeholder="Email"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-full outline-none mb-6`}
+                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
                 onChange={(e) => setEmail(e.target.value)}
                 ref={formRef}
               />
@@ -198,7 +198,7 @@ const ContactForm = () => {
               <input
                 type="text"
                 placeholder="Team's Name"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-full outline-none mb-6`}
+                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
                 onChange={(e) => setTeamName(e.target.value)}
                 ref={formRef}
               />
@@ -206,23 +206,22 @@ const ContactForm = () => {
               <input
                 type="text"
                 placeholder="Topic"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-full outline-none mb-6`}
+                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
                 onChange={(e) => setTopic(e.target.value)}
                 ref={formRef}
               />
               <textarea
                 name=""
                 id=""
-                rows="10"
                 placeholder="Message"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-full outline-none mb-6 h-[60px]`}
+                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6 h-[160px]`}
                 ref={formRef}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
 
               <div className={`flex justify-center items-center`}>
                 <button
-                  className={`${style._btn_style} ${style._btn_style_hover} w-[150px] h-[53px] rounded-[4px]  text-[#fff] font-[500] text-[16px] my-4 mx-auto`}
+                  className={`${style._btn_style} ${style._btn_style_hover} w-[172px] h-[53px] rounded-[4px]  text-[#fff]  text-[16px] my-4 mx-auto font-[Montserrat] font-[400] leading-[19.5px]`}
                 >
                   Submit
                 </button>
@@ -231,7 +230,7 @@ const ContactForm = () => {
 
             <div className={`md:hidden mt-6 text-center`}>
               <h1
-                className={`text-[18px] text-[#D434FE] font-[500] leading-[32px] mb-4`}
+                className={`text-[12px] text-[#D434FE] font-[400] leading-[14.63px] font-[Montserrat] mb-4`}
               >
                 Share on
               </h1>

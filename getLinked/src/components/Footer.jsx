@@ -35,7 +35,7 @@ const Footer = () => {
             alt="Stars"
             className={`absolute right-[150px] bottom-[300px] w-[8px] animate-ping delay-300 duration-100 ease-in md:bottom-[150px] md:right-[250px]`}
           />
-                    <div className={`mb-[3rem] md:w-[300px] md:mb-0`}>
+                    <div className={`mb-[3rem] md:w-[245px] mx-auto md:mb-0`}>
                          <Link
           to="/"
           className={`font-face-cd text-[#fff] font-[700] leading-[24.6px] text-[20px] mb-[3rem] md:text-[30px] md:leading-[36.9px]`}
@@ -49,7 +49,7 @@ const Footer = () => {
                               <AnchorLink href="#Privacy">Privacy Policy</AnchorLink>
                          </div>
                     </div>
-                    <div className={`mb-[3rem] md:w-[35%] md:mb-0`}>
+                    <div className={`mb-[3rem] md:w-[280px] mx-auto md:mb-0`}>
                          <h1 className={`font-[Montserrat] text-[#D434FE] font-[600] text-[14px] leading-[24.14px] mb-2`}>Useful Links</h1>
                          <div className={`flex flex-col gap-4 text-[12px] font-[Montserrat] font-[400] text-[#fff] leading-[20.69px] mb-4`}>
                               <AnchorLink href="#Hero">Overview</AnchorLink>
@@ -66,7 +66,7 @@ const Footer = () => {
                          </div>
                     </div>
 
-                    <div className={`flex flex-col gap-4  md:w-[20%]`}>
+                    <div className={`flex flex-col gap-4  md:w-[150px]`}>
                          <h1 className={`text-[#D434FE] font-[600] text-[14px] leading-[24.14px] font-[Montserrat]`}>Contact Us</h1>
                          <div className={`flex flex-col gap-4 text-[12px] font-[400] text-[#fff] leading-[14.63px] mb-2 font-[Montserrat]`}>
                               <div className={`flex items-center gap-4`}>

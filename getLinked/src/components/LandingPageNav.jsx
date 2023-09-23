@@ -52,7 +52,7 @@ const LandingPageNav = () => {
               <div
                 className={`flex flex-col font-face-in gap-6 text-[#fff] text-[18px] font-[500] leading-[21.78px] spacing-[-1]`}
             >
-                <AnchorLink href="#Timeline" className={`${style._text_style_hover}`}>Timeline</AnchorLink>
+                <AnchorLink href="#Timeline" className={`${style._text_style_hover} hover:transition hover:duration-300 hover:delay-200 hover:ease-in-out`}>Timeline</AnchorLink>
                 <AnchorLink href="#Intro" className={`${style._text_style_hover}`}>Intro</AnchorLink>
                 <AnchorLink href="#Faqs" className={`${style._text_style_hover}`}>FAQs</AnchorLink>
                 <Link to="/contact" className={`${style._text_style_hover} ${splitLocation === "/contact" ? `${style._text_style}` : `text-[#fff]`}`}>Contact</Link>

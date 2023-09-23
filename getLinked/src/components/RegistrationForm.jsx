@@ -115,12 +115,12 @@ const Register = () => {
           className={`md:px-[2rem] md:pt-[3rem] rounded-[8px] md:bg-[rgba(255,255,255,0.03)] mx-auto`}
         >
           <h1
-            className={`hidden md:block text-[#D434FE] font-[600] text-[24px] mb-4 relative z-[0]`}
+            className={`hidden md:block font-face-cd text-[#D434FE] leading-[39.36px] font-[600] text-[32px] mb-4 relative z-[0]`}
           >
             Register
           </h1>
           <div className={`flex gap-4 items-end mb-4`}>
-            <h1 className={`text-[#fff] text-[14px] font-[400] text-center`}>
+            <h1 className={`font-[Montserrat] text-[#fff] text-[12px] md:text-[14px] md:leading-[17.07px] leading-[14.63px] font-[400] text-center`}>
               Be part of this movement
             </h1>
             <div
@@ -131,7 +131,7 @@ const Register = () => {
             </div>
           </div>
           <div>
-            <h1 className={`text-[18px] uppercase text-[#fff] font-[600]`}>
+            <h1 className={`text-[20px] leading-[24.38px] uppercase text-[#fff] font-[400] md:text-[24px] font-[Montserrat] md:leading-[29.26px]`}>
               Create your account
             </h1>
 
@@ -140,7 +140,7 @@ const Register = () => {
                 <div className={`mb-6 md:w-[50%]`}>
                   <label
                     htmlFor="Team Name"
-                    className={`mb-4 text-[14px] text-[#fff] font-[400]`}
+                    className={`mb-4 font-[Montserrat]  text-[13px] md:text-[14px] md:leading-[17.07px] leading-[15.85px] text-[#fff] font-[400]`}
                   >
                     Team&apos;s Name
                   </label>
@@ -156,7 +156,7 @@ const Register = () => {
                 <div className={`mb-6 md:w-[50%]`}>
                   <label
                     htmlFor="Phone"
-                    className={`mb-4 text-[14px] text-[#fff] font-[400]`}
+                    className={`mb-4 font-[Montserrat]  text-[13px] md:text-[14px] md:leading-[17.07px] leading-[15.85px] text-[#fff] font-[400]`}
                   >
                     Phone
                   </label>
@@ -175,7 +175,7 @@ const Register = () => {
                 <div className={`mb-6 md:w-[50%]`}>
                   <label
                     htmlFor="Email"
-                    className={`mb-4 text-[14px] text-[#fff] font-[400]`}
+                    className={`mb-4 font-[Montserrat]  text-[13px] md:text-[14px] md:leading-[17.07px] leading-[15.85px] text-[#fff] font-[400]`}
                   >
                     Email
                   </label>
@@ -191,7 +191,7 @@ const Register = () => {
                 <div className={`mb-6 md:w-[50%]`}>
                   <label
                     htmlFor="Project projectTopic"
-                    className={`mb-4 text-[14px] text-[#fff] font-[400]`}
+                    className={`mb-4 font-[Montserrat]  text-[13px] md:text-[14px] md:leading-[17.07px] leading-[15.85px] text-[#fff] font-[400]`}
                   >
                     Project projectTopic
                   </label>
@@ -210,7 +210,7 @@ const Register = () => {
                 <div className={`md:w-[50%]`}>
                   <label
                     htmlFor="Category"
-                    className={`mb-4 text-[14px] text-[#fff] font-[400]`}
+                    className={`mb-4 font-[Montserrat]  text-[13px] md:text-[14px] md:leading-[17.07px] leading-[15.85px] text-[#fff] font-[400]`}
                   >
                     Category
                   </label>
@@ -312,7 +312,7 @@ const Register = () => {
               </div>
 
               <p
-                className={`text-[12px] text-[#FF26B9] text-center italic font-[400] leading-[24px] mb-4 md:text-left`}
+                className={`font-[Montserrat] text-[9px] text-[#FF26B9] text-center italic font-[400] leading-[10.97px] md:text-[12px] md:leading-[14.63px] mb-4 md:text-left`}
               >
                 Please review your registration before submitting
               </p>
@@ -327,7 +327,7 @@ const Register = () => {
                 />
                 <label
                   htmlFor="agreement"
-                  className={` text-[#fff] text-[12px] font-[400]`}
+                  className={`font-[Montserrat] text-[#fff] text-[12px] font-[400] leading-[14.63px]`}
                 >
                   I agreed with the event terms and conditions and privacy
                   policy
@@ -335,7 +335,7 @@ const Register = () => {
               </div>
               <div className={`flex justify-center items-center`}>
                 <button
-                  className={`${style._btn_style} ${style._btn_style_hover} w-[150px] md:w-[100%] h-[53px] rounded-[4px]  text-[#fff] font-[500] text-[16px] my-4 mx-auto`}
+                  className={`${style._btn_style} ${style._btn_style_hover} w-[150px] md:w-[100%] h-[53px] rounded-[4px] leading-[19.5px]  text-[#fff] font-[500] text-[16px] font-[Montserrat] my-4 mx-auto`}
                 >
                   Register Now
                 </button>
