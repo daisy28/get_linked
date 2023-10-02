@@ -9,6 +9,7 @@ import Location from "../assets/Vector (2).svg";
 import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star.svg";
 import Star3 from "../assets/star (1).svg";
+import style from "./style.module.css";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -44,7 +45,7 @@ const Footer = () => {
                     <div className={`mb-[3rem] md:w-[245px] mx-auto md:mb-0`}
                     ref={ref}
     style={{
-        transform: inView ? `none` : `translateY(-40px)`,
+        transform: inView ? `none` : `translateY(-60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
                          <Link
@@ -55,23 +56,23 @@ const Footer = () => {
                          </Link>
                          <p className={`my-4 font-[Montserrat] text-[12px] font-[400] text-[#fff] leading-[20.69px] mb-4`}>Getlinked Tech Hackathon is a technology innovation program established by a group of organization with the aim of showcasing young and talented individuals in the field of technology.</p>
                          <div className={`font-[Montserrat] text-[12px] font-[400] text-[#fff] leading-[20.96px] flex gap-2 my-6`}>
-                              <AnchorLink href="#Privacy">Terms of Use</AnchorLink>
+                              <AnchorLink href="#Privacy" className={`${style._text_style_hover}  hover:transition hover:duration-300 hover:delay-200 hover:ease-in-out`}>Terms of Use</AnchorLink>
                               <a href="#" className={`text-[#D434FE] font-[600]`}>|</a>
-                              <AnchorLink href="#Privacy">Privacy Policy</AnchorLink>
+                              <AnchorLink href="#Privacy" className={`${style._text_style_hover} hover:transition hover:duration-300 hover:delay-200 hover:ease-in-out`}>Privacy Policy</AnchorLink>
                          </div>
                     </div>
                     <div className={`mb-[3rem] md:w-[280px] mx-auto md:mb-0`}
                     ref={ref}
     style={{
-        transform: inView ? `none` : `translateY(40px)`,
+        transform: inView ? `none` : `translateY(60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
                          <h1 className={`font-[Montserrat] text-[#D434FE] font-[600] text-[14px] leading-[24.14px] mb-2`}>Useful Links</h1>
                          <div className={`flex flex-col gap-4 text-[12px] font-[Montserrat] font-[400] text-[#fff] leading-[20.69px] mb-4`}>
-                              <AnchorLink href="#Hero">Overview</AnchorLink>
-                <AnchorLink href="#Timeline">Timeline</AnchorLink>
-                <AnchorLink href="#Faqs">FAQs</AnchorLink>
-                              <Link to="/register">Register</Link>
+                              <AnchorLink href="#Hero" className={`${style._text_style_hover} hover:transition hover:duration-300 hover:delay-200 hover:ease-in-out`}>Overview</AnchorLink>
+                <AnchorLink href="#Timeline" className={`${style._text_style_hover} hover:transition hover:duration-300 hover:delay-200 hover:ease-in-out`}>Timeline</AnchorLink>
+                <AnchorLink href="#Faqs" className={`${style._text_style_hover} hover:transition hover:duration-300 hover:delay-200 hover:ease-in-out`}>FAQs</AnchorLink>
+                              <Link to="/register" className={`${style._text_style_hover} hover:transition hover:duration-300 hover:delay-200 hover:ease-in-out`}>Register</Link>
                               <div className={`flex items-center gap-4`}>
                                    <p className={`text-[#D434FE] font-[500] text-[12px] leading-[14.63px] font-[Montserrat]`}>Follow us</p>
                                    <a href="#"><img src={Instagram} alt="Instagram" /></a>
@@ -85,19 +86,19 @@ const Footer = () => {
                     <div className={`flex flex-col gap-4  md:w-[150px]`}
                     ref={ref}
     style={{
-        transform: inView ? `none` : `translateY(-40px)`,
+        transform: inView ? `none` : `translateY(-60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
                          <h1 className={`text-[#D434FE] font-[600] text-[14px] leading-[24.14px] font-[Montserrat]`}>Contact Us</h1>
                          <div className={`flex flex-col gap-4 text-[12px] font-[400] text-[#fff] leading-[14.63px] mb-2 font-[Montserrat]`}>
                               <div className={`flex items-center gap-4`}>
                                    <img src={Phone} alt="Phone" />
-                                   <p>+234 6707653444</p>
+                                   <p className={`${style._text_style_hover} hover:transition hover:duration-300 hover:delay-200 hover:ease-in-out`}>+234 6707653444</p>
                               </div>
 
                               <div className={`flex items-center gap-4`}>
                                    <img src={Location} alt="Location" />
-                                   <p>27, Alara Street Yaba 100012 Lagos State</p>
+                                   <p className={`${style._text_style_hover} hover:transition hover:duration-300 hover:delay-200 hover:ease-in-out`}>27, Alara Street Yaba 100012 Lagos State</p>
                               </div>
                          </div>
                     </div>
@@ -106,7 +107,7 @@ const Footer = () => {
                <div className={`mt-8`}
                ref={ref}
     style={{
-        transform: inView ? `none` : `translateX(40px)`,
+        transform: inView ? `none` : `translateY(80px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 400ms`}}>
                     <p className={`text-center text-[12px] font-[400] text-[#fff] leading-[14.63px] font-[Montserrat] mb-2`}>All rights reserved. &copy; getlinked Ltd.</p>

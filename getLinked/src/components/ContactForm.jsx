@@ -10,7 +10,6 @@ import { useState, useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
 import Flare from "../assets/Purple-Lens-Flare-PNG (1).svg";
-import Flare2 from "../assets/Purple-Lens-Flare-PNG.svg";
 import Star from "../assets/star pu.svg";
 import Star2 from "../assets/star (1).svg";
 import Star3 from "../assets/star.svg";
@@ -159,16 +158,6 @@ const ContactForm = () => {
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
         >
-          <img
-            src={Flare2}
-            alt="Flare"
-            className={`w-[50%] h-[50%] z-[10] absolute hidden md:block md:bottom-[-100px] md:right-[-22px]`}
-          />
-          <img
-            src={Flare}
-            alt="Flare"
-            className={`w-[50%] h-[50%] z-[10] absolute hidden md:block md:bottom-[-100px] md:right-[-22px]`}
-          />
           <div className={`relative mb-6 md:hidden`}>
             <Link to="/">
               <img src={Circle} alt="" className={`relative `} />
@@ -195,49 +184,78 @@ const ContactForm = () => {
               <input
                 type="text"
                 placeholder="First Name"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
+                className={`${style._input_outline} border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
                 onChange={(e) => setFirstName(e.target.value)}
-                ref={formRef}
+                ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(60px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
               />
               <input
                 type="text"
                 placeholder="Email"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
+                className={`${style._input_outline} border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
                 onChange={(e) => setEmail(e.target.value)}
-                ref={formRef}
+                ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(120px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
               />
               <input
                 type="text"
                 placeholder="Phone number"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-full outline-none mb-6`}
+                className={`${style._input_outline} border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] w-full outline-none mb-6`}
                 onChange={(e) => setPhoneNumber(e.target.value)}
-                ref={formRef}
+                ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(180px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
               />
               <input
                 type="text"
                 placeholder="Team's Name"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
+                className={`${style._input_outline} border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
                 onChange={(e) => setTeamName(e.target.value)}
-                ref={formRef}
+                ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(240px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
               />
 
               <input
                 type="text"
                 placeholder="Topic"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
+                className={`${style._input_outline} border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6`}
                 onChange={(e) => setTopic(e.target.value)}
-                ref={formRef}
+                ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(300px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
               />
               <textarea
                 name=""
                 id=""
                 placeholder="Message"
-                className={`border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6 h-[160px]`}
-                ref={formRef}
+                className={`${style._input_outline} border border-[#fff] p-4 rounded-[4px] text-[#fff] bg-[rgba(255,255,255,0.03)] font-[Montserrat] font-[400] text-[16px] leading-[19.5px] w-full outline-none mb-6 h-[160px]`}
                 onChange={(e) => setMessage(e.target.value)}
+                ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(360px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
               ></textarea>
 
-              <div className={`flex justify-center items-center`}>
+              <div className={`flex justify-center items-center`}
+              ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(420px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
                 <button
                   className={`${style._btn_style} ${style._btn_style_hover} w-[172px] h-[53px] rounded-[4px]  text-[#fff]  text-[16px] my-4 mx-auto font-[Montserrat] font-[400] leading-[19.5px]`}
                 >
@@ -254,7 +272,7 @@ const ContactForm = () => {
               </h1>
               <div className={`flex items-center gap-4 justify-center`}>
                 <a href="#">
-                  <img src={Instagram} alt="Instagram" />
+                  <img src={Instagram} alt="Instagram"   className={`hover:bg-[#ff26b9]`}/>
                 </a>
                 <a href="#">
                   <img src={Twitter} alt="Twitter" />

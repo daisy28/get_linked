@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
         <div className={`md:w-[50%] relative z-[40]`}
         ref={ref}
     style={{
-        transform: inView ? `none` : `translateX(-40px)`,
+        transform: inView ? `none` : `translateY(-60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
@@ -119,7 +119,7 @@ const PrivacyPolicy = () => {
         <div className={`relative md:w-[50%] z-[40]`}
         ref={ref}
     style={{
-        transform: inView ? `none` : `translateX(40px)`,
+        transform: inView ? `none` : `translateY(60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img

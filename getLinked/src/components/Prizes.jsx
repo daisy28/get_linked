@@ -25,7 +25,7 @@ const Prizes = () => {
           className={`relative text-center md:text-left md:w-[50%] lg:w-[45%] md:ml-auto`}
           ref={ref}
     style={{
-        transform: inView ? `none` : `translateY(-40px)`,
+        transform: inView ? `none` : `translateY(-60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
         >
@@ -39,12 +39,7 @@ const Prizes = () => {
             Highlight of the prizes or rewards for winners and for participants.
           </p>
         </div>
-        <div className={`md:flex items-end relative`}
-        ref={ref}
-    style={{
-        transform: inView ? `none` : `translateY(40px)`,
-        opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+        <div className={`md:flex items-end relative`}>
           <img
             src={Flare}
             alt="Flare"
@@ -80,12 +75,21 @@ const Prizes = () => {
             alt="star"
             className={`absolute left-[20px] bottom-[250px] w-[10px] animate-ping delay-300 duration-100 ease-in md:bottom-[90px] md:right-[140px]`}
           />
-          <div className={`my-4 md:my-0`}>
+          <div className={`my-4 md:my-0`} ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(60px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
             <img src={Reward} alt="Reward" className={`relative z-[40]`} />
           </div>
 
           <div
             className={`flex gap-2 items-center justify-center mt-[9rem] md:w-[60%] md:mt-0 md:gap-4 relative z-[40] lg:w-[70%]`}
+            ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(-60px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
           >
             <div
               className={`relative border-2 border-[#D434FE] bg-[rgba(214,52,254,0.08)] rounded-[12px] flex justify-center items-end ${style._rewards_div} h-[132px] md:h-[162px] md:p-4 lg:p-6 lg:py-8`}
@@ -93,7 +97,7 @@ const Prizes = () => {
               <img
                 src={SilverMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-52%] md:top-[-60%] lg:top-[-73%] xl:top-[-104%]`}
+                className={`absolute top-[-52%] md:top-[-52%] lg:top-[-64%] xl:top-[-84%] hover:scale-125 hover:transition-all hover:delay-300 hover:duration-300`}
               />
               <div>
                 <div className={`flex flex-col`}>
@@ -122,7 +126,7 @@ const Prizes = () => {
               <img
                 src={GoldMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-36%] md:top-[-58%] scale-150 lg:top-[-82%] xl:top-[-107%]`}
+                className={`absolute top-[-36%] md:top-[-58%] scale-150 lg:top-[-65%] xl:top-[-88%]  hover:scale-[1.8] sc hover:transition-all hover:delay-300 hover:duration-300`}
               />
               <div>
                 <div className={`flex flex-col`}>
@@ -152,7 +156,7 @@ const Prizes = () => {
               <img
                 src={BronzeMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-52%] md:top-[-53%] lg:top-[-69%] xl:top-[-97%]`}
+                className={`absolute top-[-52%] md:top-[-50%] lg:top-[-62%] xl:top-[-85%] hover:scale-125 hover:transition-all hover:delay-300 hover:duration-300`}
               />
               <div>
                 <div className={`flex flex-col`}>

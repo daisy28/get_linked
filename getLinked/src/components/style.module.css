@@ -11,6 +11,15 @@
   background-origin: border-box;
 }
 
+._input_outline:focus {
+  background-image: linear-gradient(to right, #ff26b9, #d434fe, #903aff);
+  box-shadow: inset 0 100vw #140D27;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-origin: border-box;
+}
+
+
 ._header_div,
 ._hero_div {
   width: 272px;

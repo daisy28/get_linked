@@ -44,7 +44,7 @@ const KeyAttributes = () => {
         <div className={`relative md:w-[60%]`}
           ref={ref}
       style={{
-        transform: inView ? `none` : `translateX(-40px)`,
+        transform: inView ? `none` : `translateY(-60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
@@ -76,7 +76,7 @@ const KeyAttributes = () => {
         <div className={`relative text-center md:text-left md:w-[50%]`}
         ref={ref}
       style={{
-        transform: inView ? `none` : `translateX(40px)`,
+        transform: inView ? `none` : `translateY(60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
@@ -96,6 +96,11 @@ const KeyAttributes = () => {
                 <p
                   key={item.title}
                   className={`font-[Montserrat] text-[12px] font-[400] text-[#fff] leading-[20.82px] mb-4  md:text-[16px] md:leading-[27.76px]`}
+                  ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(60px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
                 >
                   <span className={`text-[#FF26B9] font-[700] text-[13px] leading-[22.55px] md:text-[14px] md:leading-[24.29px]`}>
                     {item.title}

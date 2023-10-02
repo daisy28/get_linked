@@ -17,7 +17,7 @@ const Timeline = () => {
         <div className={`text-center mb-10`}
         ref={ref}
       style={{
-        transform: inView ? `none` : `translateX(40px)`,
+        transform: inView ? `none` : `translateY(60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <h1
@@ -34,7 +34,12 @@ const Timeline = () => {
           </p>
         </div>
 
-        <div className={`md:hidden flex flex-col gap-6 relative`}>
+        <div className={`md:hidden flex flex-col gap-6 relative`}
+        ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(-60px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
             src={Star}
             alt="Star"
@@ -221,6 +226,11 @@ const Timeline = () => {
         </div>
         <div
           className={`hidden relative w-[80%] mx-auto md:flex flex-col gap-10 justify-center`}
+          ref={ref}
+      style={{
+        transform: inView ? `none` : `translateY(-60px)`,
+        opacity: inView ? 1 : 0,
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
         >
           <img
             src={Star}

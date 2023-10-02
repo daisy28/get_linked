@@ -24,7 +24,7 @@ const Hero = () => {
       <div className={`${style._header_div} relative mb-6 mx-auto flex flex-col md:p-4 md:ml-auto md:mx-0`}
       ref={ref}
       style={{
-        transform: inView ? `none` : `translateX(-40px)`,
+        transform: inView ? `none` : `translateY(-60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
         <h1
@@ -35,7 +35,7 @@ const Hero = () => {
         <img
           src={Stroke}
           alt="stroke"
-          className={`${style._stroke} block ml-auto absolute right-0 bottom-[-8px] w-[115px] md:right-[20px] md:w-[280px] md:bottom-[-2px]`}
+          className={`${style._stroke} block ml-auto absolute right-[15px] bottom-[-8px] w-[115px] md:right-[60px] md:w-[280px] md:bottom-[-2px]`}
         />
       </div>
 
@@ -43,7 +43,7 @@ const Hero = () => {
         <div className={`${style._hero_div} mx-auto relative z-[40] md:pl-4 md:w-[100%] md:max-w-[410px] lg:max-w[560px] xl:w-[100%] xl:max-w-[580px]`}
         ref={ref}
       style={{
-        transform: inView ? `none` : `translateX(40px)`,
+        transform: inView ? `none` : `translateY(60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
@@ -138,7 +138,7 @@ const Hero = () => {
         <div className={`relative mt-[1.5rem] md:w-[50%] lg:w-[65%]`}
         ref={ref}
       style={{
-        transform: inView ? `none` : `translateX(-40px)`,
+        transform: inView ? `none` : `translateY(-60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img src={SmartGlass} alt="Smart Glass" className={`relative `} />

@@ -16,7 +16,7 @@ const Intro = () => {
         <div className={`mb-[4rem] md:mb-0 relative md:w-[50%]`}
         ref={ref}
       style={{
-        transform: inView ? `none` : `translateX(40px)`,
+        transform: inView ? `none` : `translateY(60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img src={Idea} alt="ideas" />
@@ -34,7 +34,7 @@ const Intro = () => {
         <div className={`my-4 text-center md:text-left relative md:w-[50%]`}
         ref={ref}
       style={{
-        transform: inView ? `none` : `translateX(-40px)`,
+        transform: inView ? `none` : `translateY(-60px)`,
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
           <img
