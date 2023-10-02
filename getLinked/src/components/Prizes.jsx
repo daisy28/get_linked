@@ -97,7 +97,7 @@ const Prizes = () => {
               <img
                 src={SilverMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-52%] md:top-[-52%] lg:top-[-64%] xl:top-[-84%] hover:scale-125 hover:transition-all hover:delay-300 hover:duration-300`}
+                className={`absolute top-[-52%] md:top-[-52%] lg:top-[-74%] xl:top-[-84%] hover:scale-125 hover:transition-all hover:delay-300 hover:duration-300 hover:cursor-pointer`}
               />
               <div>
                 <div className={`flex flex-col`}>
@@ -126,7 +126,7 @@ const Prizes = () => {
               <img
                 src={GoldMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-36%] md:top-[-58%] scale-150 lg:top-[-65%] xl:top-[-88%]  hover:scale-[1.8] sc hover:transition-all hover:delay-300 hover:duration-300`}
+                className={`absolute top-[-36%] md:top-[-58%] scale-150 lg:top-[-75%] xl:top-[-88%]  hover:scale-[1.8] sc hover:transition-all hover:delay-300 hover:duration-300 hover:cursor-pointer`}
               />
               <div>
                 <div className={`flex flex-col`}>
@@ -156,7 +156,7 @@ const Prizes = () => {
               <img
                 src={BronzeMedal}
                 alt="Silver Medal"
-                className={`absolute top-[-52%] md:top-[-50%] lg:top-[-62%] xl:top-[-85%] hover:scale-125 hover:transition-all hover:delay-300 hover:duration-300`}
+                className={`absolute top-[-52%] md:top-[-50%] lg:top-[-70%] xl:top-[-85%] hover:scale-125 hover:transition-all hover:delay-300 hover:duration-300 hover:cursor-pointer`}
               />
               <div>
                 <div className={`flex flex-col`}>

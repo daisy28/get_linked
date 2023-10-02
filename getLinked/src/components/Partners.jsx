@@ -73,13 +73,13 @@ const Partners = () => {
         opacity: inView ? 1 : 0,
        transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
              <div className={`grid grid-cols-3 grid-rows-2`}>
-             <div className={`mr-4 border-b-2 border-[#D434FE] text-center p-4 flex justify-center items-center mx-auto text-white`}><img src={Liberty} alt="Liberty" className={` hover:scale-[1.3] hover:transition-all hover:delay-300 hover:duration-300`} /></div>
-             <div className={`mb-4 text-center border-l-2 border-r-2 border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Liberty2} alt="Liberty2" className={` hover:scale-[1.3] hover:transition-all hover:delay-300 hover:duration-300`} /></div>
-           <div className={`ml-4 text-center border-b-2  border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Win} alt="Winwise" className={` hover:scale-[1.3] hover:transition-all hover:delay-300 hover:duration-300`} /></div>
+             <div className={`mr-4 border-b-2 border-[#D434FE] text-center p-4 flex justify-center items-center mx-auto text-white`}><img src={Liberty} alt="Liberty" className={` hover:scale-[1.2] hover:cursor-pointer hover:transition-all hover:delay-300 hover:duration-300`} /></div>
+             <div className={`mb-4 text-center border-l-2 border-r-2 border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Liberty2} alt="Liberty2" className={` hover:scale-[1.2] hover:cursor-pointer hover:transition-all hover:delay-300 hover:duration-300`} /></div>
+           <div className={`ml-4 text-center border-b-2  border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Win} alt="Winwise" className={` hover:scale-[1.2] hover:cursor-pointer hover:transition-all hover:delay-300 hover:duration-300`} /></div>
            
-             <div className={`mt-4 text-center border-r-2 border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Wisper} alt="Wisper" className={` hover:scale-[1.3] hover:transition-all hover:delay-300  hover:duration-300`} /></div>
-             <div className={`ml-4 mr-4 text-center border-t-2 border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Paybox} alt="Paybox" className={` hover:scale-[1.3] hover:transition-all hover:delay-300 hover:duration-300`} /></div>
-             <div className={`mt-4 text-center  border-[#D434FE] border-l-2 p-4 flex justify-center items-center mx-auto text-white`}><img src={Vizual} alt="Vizual" className={` hover:scale-[1.3] hover:transition-all hover:delay-300 hover:duration-300`} /></div>
+             <div className={`mt-4 text-center border-r-2 border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Wisper} alt="Wisper" className={` hover:scale-[1.2] hover:cursor-pointer hover:transition-all hover:delay-300  hover:duration-300`} /></div>
+             <div className={`ml-4 mr-4 text-center border-t-2 border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Paybox} alt="Paybox" className={` hover:scale-[1.2] hover:cursor-pointer hover:transition-all hover:delay-300 hover:duration-300`} /></div>
+             <div className={`mt-4 text-center  border-[#D434FE] border-l-2 p-4 flex justify-center items-center mx-auto text-white`}><img src={Vizual} alt="Vizual" className={` hover:scale-[1.2] hover:cursor-pointer hover:transition-all hover:delay-300 hover:duration-300`} /></div>
            </div>
           </div>
 
