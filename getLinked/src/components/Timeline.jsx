@@ -14,12 +14,7 @@ const Timeline = () => {
       className={`p-6 py-[4rem] bg-[#140D27] border-0 lg:px-[3rem]`} id="Timeline"
     >
       <div className={``}>
-        <div className={`text-center mb-10`}
-        ref={ref}
-      style={{
-        transform: inView ? `none` : `translateY(60px)`,
-        opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+        <div className={`text-center mb-10`}>
           <h1
             className={`font-face-cd marker: md:text-[32px] md:leading-[42.56px] text-[20px] font-[700] leading-[26.6px] text-[#fff] mb-3`}
           >
@@ -34,12 +29,7 @@ const Timeline = () => {
           </p>
         </div>
 
-        <div className={`md:hidden flex flex-col gap-6 relative`}
-        ref={ref}
-      style={{
-        transform: inView ? `none` : `translateY(-60px)`,
-        opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+        <div className={`md:hidden flex flex-col gap-6 relative`}>
           <img
             src={Star}
             alt="Star"
@@ -228,9 +218,9 @@ const Timeline = () => {
           className={`hidden relative w-[80%] mx-auto md:flex flex-col gap-10 justify-center`}
           ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(-60px)`,
+        transform: inView ? `none` : `translateY(-40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
         >
           <img
             src={Star}

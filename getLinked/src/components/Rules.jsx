@@ -19,9 +19,9 @@ const Rules = () => {
         <div className={`relative md:w-[50%] md:order-4`}
         ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(60px)`,
+        transform: inView ? `none` : `translateY(40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
           <img src={Img1} alt="ideas" className={`md:hidden relative z-[40]`} />
           <img src={ImgMobile} alt="ideas" className={`hidden md:block relative z-[40]`} />
           <img
@@ -43,9 +43,9 @@ const Rules = () => {
         <div className={`my-4 text-center md:text-left relative md:w-[50%]`}
         ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(-60px)`,
+        transform: inView ? `none` : `translateY(-40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
           <img
             src={Star}
             alt="star"

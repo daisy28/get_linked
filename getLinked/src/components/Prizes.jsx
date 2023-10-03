@@ -25,9 +25,9 @@ const Prizes = () => {
           className={`relative text-center md:text-left md:w-[50%] lg:w-[45%] md:ml-auto`}
           ref={ref}
     style={{
-        transform: inView ? `none` : `translateY(-60px)`,
+        transform: inView ? `none` : `translateY(-40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
         >
           <h1
             className={`font-face-cd text-[20px] font-[700] leading-[24.6px] text-[#fff] mb-4 md:text-[32px] md:leading-[39.36px]`}
@@ -77,9 +77,9 @@ const Prizes = () => {
           />
           <div className={`my-4 md:my-0`} ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(60px)`,
+        transform: inView ? `none` : `translateY(40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
             <img src={Reward} alt="Reward" className={`relative z-[40]`} />
           </div>
 
@@ -87,9 +87,9 @@ const Prizes = () => {
             className={`flex gap-2 items-center justify-center mt-[9rem] md:w-[60%] md:mt-0 md:gap-4 relative z-[40] lg:w-[70%]`}
             ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(-60px)`,
+        transform: inView ? `none` : `translateY(-40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
           >
             <div
               className={`relative border-2 border-[#D434FE] bg-[rgba(214,52,254,0.08)] rounded-[12px] flex justify-center items-end ${style._rewards_div} h-[132px] md:h-[162px] md:p-4 lg:p-6 lg:py-8`}

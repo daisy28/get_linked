@@ -45,9 +45,9 @@ const Footer = () => {
                     <div className={`mb-[3rem] md:w-[245px] mx-auto md:mb-0`}
                     ref={ref}
     style={{
-        transform: inView ? `none` : `translateY(-60px)`,
+        transform: inView ? `none` : `translateY(-40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
                          <Link
           to="/"
           className={`font-face-cd text-[#fff] font-[700] leading-[24.6px] text-[20px] mb-[3rem] md:text-[30px] md:leading-[36.9px]`}
@@ -64,9 +64,9 @@ const Footer = () => {
                     <div className={`mb-[3rem] md:w-[280px] mx-auto md:mb-0`}
                     ref={ref}
     style={{
-        transform: inView ? `none` : `translateY(60px)`,
+        transform: inView ? `none` : `translateY(40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
                          <h1 className={`font-[Montserrat] text-[#D434FE] font-[600] text-[14px] leading-[24.14px] mb-2`}>Useful Links</h1>
                          <div className={`flex flex-col gap-4 text-[12px] font-[Montserrat] font-[400] text-[#fff] leading-[20.69px] mb-4`}>
                               <AnchorLink href="#Hero" className={`${style._text_style_hover} hover:transition hover:duration-300 hover:delay-200 hover:ease-in-out`}>Overview</AnchorLink>
@@ -86,9 +86,9 @@ const Footer = () => {
                     <div className={`flex flex-col gap-4  md:w-[150px]`}
                     ref={ref}
     style={{
-        transform: inView ? `none` : `translateY(-60px)`,
+        transform: inView ? `none` : `translateY(-40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
                          <h1 className={`text-[#D434FE] font-[600] text-[14px] leading-[24.14px] font-[Montserrat]`}>Contact Us</h1>
                          <div className={`flex flex-col gap-4 text-[12px] font-[400] text-[#fff] leading-[14.63px] mb-2 font-[Montserrat]`}>
                               <div className={`flex items-center gap-4`}>

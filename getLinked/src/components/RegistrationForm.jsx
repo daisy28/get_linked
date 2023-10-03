@@ -113,18 +113,18 @@ const Register = () => {
         </h1>
         <div ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(-60px)`,
+        transform: inView ? `none` : `translateY(-40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
           <img src={Illustration} alt="Illustration" />
         </div>
         <div
           className={`md:px-[2rem] md:pt-[3rem] rounded-[8px] md:bg-[rgba(255,255,255,0.03)] mx-auto`}
           ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(60px)`,
+        transform: inView ? `none` : `translateY(40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
         >
           <h1
             className={`hidden md:block font-face-cd text-[#D434FE] leading-[39.36px] font-[600] text-[32px] mb-4 relative z-[0]`}
@@ -164,9 +164,9 @@ const Register = () => {
                     onChange={(e) => setTeamName(e.target.value)}
                     ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(60px)`,
+        transform: inView ? `none` : `translateY(40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
                   />
                 </div>
                 <div className={`mb-6 md:w-[50%]`}>
@@ -186,7 +186,7 @@ const Register = () => {
       style={{
         transform: inView ? `none` : `translateY(120px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
                   />
                 </div>
               </div>
@@ -209,7 +209,7 @@ const Register = () => {
       style={{
         transform: inView ? `none` : `translateY(180px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
                   />
                 </div>
                 <div className={`mb-6 md:w-[50%]`}>
@@ -229,7 +229,7 @@ const Register = () => {
       style={{
         transform: inView ? `none` : `translateY(180px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
                   />
                 </div>
               </div>
@@ -252,7 +252,7 @@ const Register = () => {
       style={{
         transform: inView ? `none` : `translateY(240px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
                   >
                     <option
                       value="category"
@@ -303,7 +303,7 @@ const Register = () => {
       style={{
         transform: inView ? `none` : `translateY(300px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
                   >
                     <option
                       value="Group Size"
@@ -367,7 +367,7 @@ const Register = () => {
       style={{
         transform: inView ? `none` : `translateY(360px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
                 />
                   I agreed with the event terms and conditions and privacy
                   policy
@@ -379,7 +379,7 @@ const Register = () => {
       style={{
         transform: inView ? `none` : `translateY(420px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
                 <button
                   className={`${style._btn_style} ${style._btn_style_hover} w-[150px] md:w-[100%] h-[53px] rounded-[4px] leading-[19.5px]  text-[#fff] font-[500] text-[16px] font-[Montserrat] my-4 mx-auto`}
                 >

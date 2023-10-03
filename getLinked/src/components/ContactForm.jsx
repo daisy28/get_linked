@@ -99,7 +99,7 @@ const ContactForm = () => {
       style={{
         transform: inView ? `none` : `translateY(40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
           <div className={`w-[250px] ml-auto relative z-[40]`}>
             <h1
               className={`font-face-cd text-[32px] font-[600] leading-[39.36px] text-[#D434FE] mb-6`}
@@ -156,7 +156,7 @@ const ContactForm = () => {
       style={{
         transform: inView ? `none` : `translateY(-40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
         >
           <div className={`relative mb-6 md:hidden`}>
             <Link to="/">
@@ -188,9 +188,9 @@ const ContactForm = () => {
                 onChange={(e) => setFirstName(e.target.value)}
                 ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(60px)`,
+        transform: inView ? `none` : `translateY(40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
               />
               <input
                 type="text"
@@ -201,7 +201,7 @@ const ContactForm = () => {
       style={{
         transform: inView ? `none` : `translateY(120px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
               />
               <input
                 type="text"
@@ -212,7 +212,7 @@ const ContactForm = () => {
       style={{
         transform: inView ? `none` : `translateY(180px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
               />
               <input
                 type="text"
@@ -223,7 +223,7 @@ const ContactForm = () => {
       style={{
         transform: inView ? `none` : `translateY(240px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
               />
 
               <input
@@ -235,7 +235,7 @@ const ContactForm = () => {
       style={{
         transform: inView ? `none` : `translateY(300px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
               />
               <textarea
                 name=""
@@ -247,7 +247,7 @@ const ContactForm = () => {
       style={{
         transform: inView ? `none` : `translateY(360px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
               ></textarea>
 
               <div className={`flex justify-center items-center`}
@@ -255,7 +255,7 @@ const ContactForm = () => {
       style={{
         transform: inView ? `none` : `translateY(420px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
                 <button
                   className={`${style._btn_style} ${style._btn_style_hover} w-[172px] h-[53px] rounded-[4px]  text-[#fff]  text-[16px] my-4 mx-auto font-[Montserrat] font-[400] leading-[19.5px]`}
                 >

@@ -51,9 +51,9 @@ const Partners = () => {
              className={`relative z-[40] text-center md:w-[50%] mx-auto mb-8`}
              ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(60px)`,
+        transform: inView ? `none` : `translateY(40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}
         >
           <h1
             className={`font-face-cd text-[20px] font-[700] leading-[27.5px] text-[#fff] mb-4 md:text-[32px] md:leading-[27.5px]`}
@@ -69,9 +69,9 @@ const Partners = () => {
            <div className={`md:w-[600px] lg:p-[4rem] mx-auto border border-[#D434FE] relative z-[40] p-4 rounded-[8px] md:p-8 py-6`}
            ref={ref}
       style={{
-        transform: inView ? `none` : `translateY(-60px)`,
+        transform: inView ? `none` : `translateY(-40px)`,
         opacity: inView ? 1 : 0,
-       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 300ms`}}>
+       transition: `all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 200ms`}}>
              <div className={`grid grid-cols-3 grid-rows-2`}>
              <div className={`mr-4 border-b-2 border-[#D434FE] text-center p-4 flex justify-center items-center mx-auto text-white`}><img src={Liberty} alt="Liberty" className={` hover:scale-[1.2] hover:cursor-pointer hover:transition-all hover:delay-300 hover:duration-300`} /></div>
              <div className={`mb-4 text-center border-l-2 border-r-2 border-[#D434FE] p-4 flex justify-center items-center mx-auto text-white`}><img src={Liberty2} alt="Liberty2" className={` hover:scale-[1.2] hover:cursor-pointer hover:transition-all hover:delay-300 hover:duration-300`} /></div>
